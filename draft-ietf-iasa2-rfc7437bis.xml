@@ -142,8 +142,8 @@
 				what a sitting member means for each of these groups. </t>
 		    </list> </t>
 
-		<t> A final section describes how this document differs from
-		    its predecessor <xref target="RFC3777"/>. </t>
+		<t> A final section describes how this document differs from <xref target="RFC3777"/> 
+			and <xref target="RFC7437"/>. </t>
 
 		<t> An appendix of useful facts and practices collected from
 		    previous nominating committees is also included. </t>
@@ -1807,27 +1807,42 @@
 </reference>
 	</references>
 
-	<section anchor="changes" title="Changes Since RFC 3777">
-		<t> <list style="symbols">
-			<t>  Converted source file from nroff to XML,
+<section anchor="changes" title="Changes Since RFC 3777">
+	<t> <list style="symbols">
+		<t>  Converted source file from nroff to XML,
 			resulting in some reformatting. </t>
 
-			<t> Applied errata for RFC 3777 (<xref
+		<t> Applied errata for RFC 3777 (<xref
 			target="Err232"/> and <xref target="Err4179"/>). </t>
 
-			<t> Applied RFC 5078 update. </t>
+		<t> Applied RFC 5078 update. </t>
 
-			<t> Applied RFC 5633 update. </t>
+		<t> Applied RFC 5633 update. </t>
 
-			<t> Applied RFC 5680 update. </t>
+		<t> Applied RFC 5680 update. </t>
 
-			<t> Applied RFC 6859 update. </t>
+		<t> Applied RFC 6859 update. </t>
 
-			<t> Corrected a few grammatical errors. </t>
+		<t> Corrected a few grammatical errors. </t>
 
-			<t> Added a reference to RFC 3710. </t>
-		    </list> </t>
-	</section>
+		<t> Added a reference to RFC 3710. </t>
+	    </list> </t>
+</section>
+	
+<section anchor="changes" title="Changes Since RFC 7437">
+	<t> <list style="symbols">
+		<t> Changed all mentions of the Internet Administrative Oversight 
+			Committee (IAOC), and replaced it with the appropriate 
+			references to the IETF Administration LLC (IETF LLC). 
+			This included making changes on an as needed basis to 
+			some aspects of the process for the IETF LLC, in 
+			accordance with IASA2. </t>
+
+		<t> Added references to appropriate IASA2 documents. </t>
+			
+		<t> Corrected a few grammatical errors. </t>
+	    </list> </t>
+</section>
 
 	<section anchor="oral" title="Oral Tradition">
 		<t> Over the years, various Nominating Committees have learned
