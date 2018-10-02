@@ -21,42 +21,57 @@
 		Process: Operation of the Nominating and Recall Committees
 	</title>
 
-	<author initials="M. S." surname="Kucherawy"
-	        fullname="Murray S. Kucherawy"
-		role="editor">
-
-		<organization/> 
-
+<author initials="M. S." surname="Kucherawy" fullname="Murray S. Kucherawy" role="editor">
+	<organization/> 
 		<address>
 			<postal>
-				<street>270 Upland Drive</street>
 				<city>San Francisco</city>
 				<region>CA</region>
-				<code>94127</code>
 				<country>United States</country>
 			</postal>
-
 			<email>superuser@gmail.com</email>
 		</address>
-	</author>
+</author>
+	
+<author fullname="Robert M. Hinden" initials="R." surname="Hinden" role="editor">
+	<organization>Check Point Software</organization>
+      		<address>
+        		<postal>
+        			<city>San Carlos</city>
+          			<region>CA</region>
+          			<country>USA</country>
+        		</postal>
+        		<email>bob.hinden@gmail.com</email>
+        	</address>
+</author>
+	
+<author fullname="Jason Livingood" initials="J." surname="Livingood" role="editor">
+	<organization>Comcast</organization>
+      		<address>
+        		<postal>
+        			<city>Philadelphia</city>
+          			<region>PA</region>
+          			<country>USA</country>
+        		</postal>
+        		<email>jason_livingood@comcast.com</email>
+        	</address>
+</author>
+	
+<date month="October" year="2018"/>
 
-	<date month="January" year="2015"/>
+<area>General</area>
+	
+<workgroup>IETF Administrative Support Activity 2</workgroup>
 
-	<area>General</area>
-
-
-<keyword>example</keyword>
-
-
-	<abstract>
-		<t> The process by which the members of the IAB and IESG,
+<abstract>
+	<t> The process by which the members of the IAB and IESG,
 		    and some members of the IAOC, are selected, confirmed, and
 		    recalled is specified in this document.  This document
 		    is a self-consistent, organized compilation of the process
 		    as it was known at the time of publication of
 		    RFC 3777, with various updates since that
 		    version was published. </t>
-	</abstract>
+</abstract>
 
 </front>
 
