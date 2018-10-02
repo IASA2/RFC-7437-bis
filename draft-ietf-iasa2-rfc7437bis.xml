@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="US-ASCII"?>
 
 <!DOCTYPE rfc SYSTEM "rfc2629.dtd" [
+
+<!ENTITY RFC3777 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.3777.xml">
+<!ENTITY RFC5078 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5078.xml">
+<!ENTITY RFC5633 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5633.xml">
+<!ENTITY RFC6859 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6859.xml">
+<!ENTITY RFC7347 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.7437.xml">
+<!ENTITY I-D.ietf-iasa2-struct SYSTEM "http://xml.resource.org/public/rfc/bibxml3/reference.I-D.ietf-iasa2-struct.xml">
+
 ]>
 
 <?xml-stylesheet type='text/xsl' href='rfc2629.xslt' ?>
@@ -16,10 +24,10 @@
 
 <front>
 	
-	<title abbrev="NomCom">
-		IAB, IESG, and IAOC Selection, Confirmation, and Recall
-		Process: Operation of the Nominating and Recall Committees
-	</title>
+<title abbrev="NomCom">
+	IAB, IESG, and IETF LLC Selection, Confirmation, and Recall Process: 
+	Operation of the Nominating and Recall Committees
+</title>
 
 <author initials="M. S." surname="Kucherawy" fullname="Murray S. Kucherawy" role="editor">
 	<organization/> 
@@ -64,68 +72,63 @@
 <workgroup>IETF Administrative Support Activity 2</workgroup>
 
 <abstract>
-	<t> The process by which the members of the IAB and IESG,
-		    and some members of the IAOC, are selected, confirmed, and
-		    recalled is specified in this document.  This document
-		    is a self-consistent, organized compilation of the process
-		    as it was known at the time of publication of
-		    RFC 3777, with various updates since that
-		    version was published. </t>
+	<t> The process by which the members of the IAB and IESG, and some members of the 
+		IETF LLC are selected, confirmed, and recalled is specified in this 
+		document.  This document is a self-consistent, organized compilation of the 
+		process as it was known at the time of publication of RFC 3777, with various 
+		updates since that version was published.</t>
 </abstract>
 
 </front>
 
 <middle>
-	<section anchor="intro" title="Introduction">
-		<t> This document is a revision of and supercedes
-		    BCP 10.  It is in essence a republishing of
-		    <xref target="RFC3777"/> and the other RFCs that updated
-		    that document into a single specification.  The result is
-		    a complete specification of the process by which members
-		    of the IAB and IESG, and some members of the IAOC, are
-		    selected, confirmed, and recalled as of the date of its
-		    approval. </t>
+<section anchor="intro" title="Introduction">
+	<t> This document is a revision of and supercedes BCP 10.  It is in essence a republishing 
+		of <xref target="RFC3777"/> and the other RFCs that updated that document into a 
+		single specification.  The result is a complete specification of the process by which 
+		members of the Internet Architecture Board (IAB) and Internet Engineering Steering 
+		Group (IESG), and some members of the IETF Administration LLC (IETF LLC), are selected, 
+		confirmed, and recalled. </t>
 
-		<t> Section 4 of <xref target="RFC4071"/> provides further
-		    details about the IAOC positions that are filled by
-		    the nominating committee. </t>
+	<t>Section 4 of <xref target="I-D.ietf-iasa2-struct"/> provides further details about the 
+		IETF LLC Board Director positions that are filled by the IETF Nominating Committee 
+		(NomCom). </t>
 
-		<t> The following two assumptions continue to be true of this
-		    specification:
-
-		    <list style="numbers">
+	<t>The following two assumptions continue to be true of this specification:
+		<list style="numbers">
 			<t> The Internet Research Task Force (IRTF) and
 			    Internet Research Steering Group (IRSG) are not a
 			    part of the process described here. </t>
 
 			<t> The organization (and reorganization) of the IESG
 			    is not a part of the process described here. </t>
-		    </list> </t>
+		</list>
+	</t>
 
-		<t> The time frames specified here use IETF meetings as
+	<t> The time frames specified here use IETF meetings as
 		    a frame of reference.  The time frames assume that the
 		    IETF meets three times per calendar year with
 		    approximately equal amounts of time between them.  The
 		    meetings are referred to as the First IETF, Second IETF,
 		    or Third IETF as needed. </t>
 
-		<t> The next section lists the words and phrases commonly used
+	<t> The next section lists the words and phrases commonly used
 		    throughout this document with their intended meaning. </t>
 
-		<t> The majority of this document is divided into four major
+	<t> The majority of this document is divided into four major
 		    topics as follows:
 
-		    <list style="hanging">
+		<list style="hanging">
 			<t hangText="General:"> This is a set of rules and
 				constraints that apply to the selection and
 				confirmation process as a whole. </t>
 
-			<t hangText="Nominating Committee Selection:"> This
+			<t hangText="IETF Nominating Committee Selection:"> This
 				is the process by which the volunteers who
 				will serve on the committee are
 				selected. </t>
 
-			<t hangText="Nominating Committee Operation:"> This
+			<t hangText="IETF Nominating Committee Operation:"> This
 				is the set of principles, rules, and
 				constraints that guide the activities of
 				the nominating committee, including the
@@ -133,9 +136,10 @@
 
 			<t hangText="Member Recall:"> This is the process by
 				which the behavior of a sitting member of the
-				IAOC, IESG, or IAB may be questioned, perhaps
+				IETF LLC, IESG, or IAB may be questioned, perhaps
 				resulting in the removal of the sitting
-				member. </t>
+				member. See <xref="Definitions"/> for a description of 
+				what a sitting member means for each of these groups. </t>
 		    </list> </t>
 
 		<t> A final section describes how this document differs from
@@ -152,15 +156,15 @@
 		    reader.
 
 		    <list style="hanging">
-			<t hangText="candidate:"> A nominee who has been
+			<t hangText="Candidate:"> A nominee who has been
 				selected to be considered for confirmation by
 				a confirming body. </t>
 
-			<t hangText="confirmed candidate:"> A candidate that
+			<t hangText="Confirmed Candidate:"> A candidate that
 				has been reviewed and approved by a
 				confirming body. </t>
 
-			<t hangText="nominating committee term:"> The term
+			<t hangText="Nominating Committee Term:"> The term
 				begins when its members are officially
 				announced, which is expected to be prior to
 				the Third IETF to ensure it is fully
@@ -174,13 +178,14 @@
 				Secretariat function.  (See Section 2 of
 				<xref target="RFC3710"/>). </t>
 
-			<t hangText="nominee:"> A person who is being or has
+			<t hangText="Nominee:"> A person who is being or has
 				been considered for one or more open positions
 				of the IESG, IAB, or IAOC. </t>
 
-			<t hangText="sitting member:"> A person who is
+			<t hangText="Sitting Member:"> A person who is
 				currently serving a term of membership in the
-				IESG, IAB, or ISOC Board of Trustees. </t>
+				IESG or IAB, as a Board Trustee for the Internet Society, 
+				or as a Board Director for the IETF LLC. </t>
 		    </list> </t>
 	</section>
 
@@ -229,11 +234,11 @@
 		         title="Nominating Committee Principal Functions">
 			<t> The principal functions of the nominating
 			    committee are to review each open IESG, IAB, and
-			    IAOC position and to nominate either its incumbent
+			    IETF LLC position and to nominate either its incumbent
 			    or a superior candidate. </t>
 
 			<t> Although there is no term limit for serving in
-			    any IESG, IAB, or IAOC position, the nominating
+			    any IESG, IAB, or IETF LLC position, the nominating
 			    committee may use length of service as one of its
 			    criteria for evaluating an incumbent. </t>
 
@@ -326,9 +331,14 @@
 			    meeting as determined by their mutual
 			    agreement. </t>
 
-			<t> For confirmed candidates of the IAB and IAOC, the
+			<t> For confirmed candidates of the IAB, the
 			    terms overlap with the terms of the sitting
 			    members for the entire week of the meeting. </t>
+			
+			
+[**NEEDS ATTENTION**]			
+			<t> For confirmed candidates of the IETF LLC, the
+			    term begins at the appropriate IETF LLC Board meeting. </t>
 
 			<t> For candidates confirmed under the mid-term
 			    vacancy rules, the term begins as soon as possible
@@ -454,6 +464,8 @@
 			    consent model is used throughout the process.
 			    This model is characterized as follows. </t>
 
+[**NEEDS ATTENTION**]	
+			
 			<section anchor="gen_model_1"
 			         title="Positions To Be Reviewed">
 				<t> The IETF Executive Director informs the
@@ -492,6 +504,8 @@
 				<t> The Internet Society Board of Trustees
 				    reviews the IAB candidates. </t>
 
+
+[**NEEDS ATTENTION**]	
 				<t> The IAOC candidate is reviewed as
 				    specified in <xref target="RFC4071"/>. </t>
 
@@ -565,6 +579,8 @@
 			</section>
 		</section>
 
+
+[**NEEDS ATTENTION**]	
 		<section anchor="gen_sitting" title="Sitting Members">
 			<t> The following rules apply to nominees and candidates
 			    who are currently sitting members of the IESG, IAB,
@@ -572,6 +588,8 @@
 			    position being filled by the nominating
 			    committee. </t>
 
+
+[**NEEDS ATTENTION**]	
 			<t> The confirmation of a candidate to an open
 			    position does not automatically create a vacancy
 			    in the IESG, IAB, or IAOC position currently
@@ -584,6 +602,8 @@
 			    mid-term vacancy documented elsewhere in this
 			    document. </t>
 
+
+[**NEEDS ATTENTION**]	
 			<t> The resignation should be effective as of when
 			    the term of the new position begins.  The
 			    resignation may remain confidential to the IAB,
@@ -1010,6 +1030,8 @@
 			    or working group chair. </t>
 		</section>
 
+		
+[**NEEDS ATTENTION**]			
 		<section anchor="sel_disqualify" title="Not Qualified">
 			<t> Any person who serves on any of the Internet
 			    Society Board of Trustees, the IAB, the IESG, or
@@ -1388,6 +1410,8 @@
 			    nominating committee members are eligible for
 			    nomination by the following committee if not
 			    otherwise disqualified. </t>
+[**NEEDS ATTENTION**]	
+
 
 			<t> Members of the IETF community who were recalled
 			    from any IESG, IAB, or IAOC position during the
@@ -1417,6 +1441,8 @@
 			    <xref target="gen_confidential"/>.  Feedback on
 			    individual nominees should always be
 			    confidential. </t>
+
+[**NEEDS ATTENTION**]	
 
 			<t> A broad base of the community should include the
 			    existing members of the IAB, IAOC, and IESG,
@@ -1614,6 +1640,9 @@
 		    necessary, a paragraph discussing the interpretation of
 		    each rule is included. </t>
 
+		
+[**NEEDS ATTENTION**]	
+		
 		<section anchor="recall_petition" title="Petition">
 			<t> At any time, at least 20 members of the IETF
 			    community, who are qualified to be voting members
@@ -1716,7 +1745,9 @@
 
 <back>
 	<references title="Normative References">
-	
+		
+[**NEEDS ATTENTION**]	
+		
 <reference anchor='RFC3710' target='http://www.rfc-editor.org/info/rfc3710'>
 
 <front>
@@ -1753,43 +1784,16 @@
 </reference>
 	</references>
 
-	<references title="Informative References">
+<references title="Informative References">
+	
+	&RFC3777;
+	&RFC5078;
+	&RFC5633;
+	&RFC6859;
+	&RFC7437;
+	&I-D.ietf-iasa2-struct;
 
-
-<!--[rfced] FYI, the following updates will be applied 
-before publication, during post-xml2rfc processing, in
-keeping with the guidance in RFC 7322.
-
-- Removal of the "Appendix" designation from the
-Acknowledgements section.
-
-- Addition of the Authors' Addresses section to the ToC.
-
-- Correction of the reference entries for the errata.
-
-For example:
-[Err232]   RFC Errata, "Erratum ID 232", RFC 3777, .
-will be
-[Err232]   RFC Errata, Erratum ID 232, RFC 3777.
--->
-
-<reference anchor="Err232"> 
-<front> 
-<title>Erratum ID 232</title>
-<author><organization>RFC Errata</organization></author> 
-<date></date>
-</front> 
-<seriesInfo name="RFC" value="3777"/>
-</reference>
-
-<reference anchor="Err4179"> 
-<front> 
-<title>Erratum ID 4179</title>
-<author><organization>RFC Errata</organization></author> 
-<date></date>
-</front> 
-<seriesInfo name="RFC" value="3777"/>
-</reference>
+</references>
 	
 <reference anchor='RFC3797' target='http://www.rfc-editor.org/info/rfc3797'>
 
@@ -1924,6 +1928,8 @@ will be
 			<t> The Chair establishes and announces
 				milestones to ensure the timely selection of the
 				nominating committee members. [1] </t>
+
+[**NEEDS ATTENTION**]	
 
 			<t> The Chair contacts the IESG, IAB,
 				and Internet Society Board of Trustees
