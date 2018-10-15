@@ -1702,21 +1702,15 @@
 		
 		<section anchor="LLC-removal" title="IETF LLC Board Member Removal">
 
-
-                  <t>DISCUSSION:
-		  <list>
-		    <t>Is it correct that the IETF recall process can be
-		    used to recall an IETF LLC member?</t>
-		  </list></t>
-
 			<t> As described in Section 4.12 of 
 				<xref target="I-D.ietf-iasa2-struct"/>,
-				Members of the IETF LLC Board  
+				members of the IETF LLC Board  
 				may be removed 
 				with or without cause by the IETF LLC Board itself.  
 				In addition, this IETF recall process can also 
 				be used to remove or recall an IETF LLC
-		  	        member. </t>
+		  	        member, except for the member  
+				appointed by the Internet Society. </t>
 
                 </section>			
 		
@@ -1911,6 +1905,10 @@
 		<t>Modified the Advice and Consent model to enable IESG, IAB, and IETF LLC to 
 			communicate directly with the NomCom rather than via the 
 			Managing Director, IETF Secretariat.</t>
+		
+		<t>Updated member removal text to reflect the new LLC rules, which 
+		enables removal via the LLC or the IETF recall process, except for 
+		the ISOC-appointed member.</t>
 		
 	    </list> </t>
 </section>
