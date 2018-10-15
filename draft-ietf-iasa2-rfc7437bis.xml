@@ -1078,14 +1078,6 @@
 		
 		<section anchor="sel_disqualify" title="Not Qualified">
 			
-		  <t>DISCUSSION:
-		  <list>
-		    <t>Changed IAOC to LLC Board members, and added that 
-			employees or contractors of the LLC may not serve
-			as voting members of the NomCom.  Should anything
-			be said about ISOC contractors or employees?</t>
-		  </list></t>
-
 			<t> Any person who serves on the Internet Society
 			Board of Trustees, the IETF LLC Board of
 			Directors, the IAB, or the IESG, including those
@@ -1093,9 +1085,6 @@
 			positions, may not volunteer to serve as voting
 			members of the nominating committee. In addition,
 			employees or contractors of the IETF LLC
-<!--
- 			     or the Internet Society 
--->
 			may not volunteer to serve as voting members of
 			the nominating committee.  Liaisons to these
 			bodies from other bodies or organizations are not
@@ -1909,6 +1898,10 @@
 		<t>Updated member removal text to reflect the new LLC rules, which 
 		enables removal via the LLC or the IETF recall process, except for 
 		the ISOC-appointed member.</t>
+		
+		<t>Removed discussion text from the volunteer eligibility section. This means 
+			that IETF LLC employees and contractors cannot volunteer for the NomCom 
+			but does not extend that prohibition to ISOC employees and contractors.</t>
 		
 	    </list> </t>
 </section>
