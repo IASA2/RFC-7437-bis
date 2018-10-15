@@ -517,32 +517,19 @@
 			<t> Unless otherwise specified, the advice and
 			    consent model is used throughout the process.
 			    This model is characterized as follows. </t>
-			
-				<t>DISCUSSION
-				<list>
-                                <t>Does this need to change?  It's not
-				clear that the "Managing Director, IETF Secretariat"
-                                needs to be in the loop between the IESG,
-				IAB, and IETF LLC communications to the
-				NomCom, nor is it even current practice.
-				The individual groups can do this directly.                               
-				</t>
-				</list></t>
-
+				
 			<section anchor="gen_model_1"
 			         title="Positions To Be Reviewed">
 								
-				<t> The Managing Director, IETF Secretariat informs the
-				    nominating committee of the IESG, IAB, and
-				    IETF LLC positions to be reviewed. </t>
+				<t> The chair of the IESG, IAB, and
+				    IETF LLC each informs the nominating committee 
+					of their respective positions to be reviewed. </t>
 
 				<t> The IESG, IAB, and IETF LLC are responsible for
 				    providing a summary of the expertise desired
 				    of the candidates selected for their
-				    respective open positions to the
-				    Managing Director, IETF Secretariat
-				    The summaries are provided to
-				    the nominating committee for its
+				    respective open positions. The summaries are 
+				    provided to the nominating committee for its
 				    consideration. </t>
 			</section>
 
@@ -706,9 +693,11 @@
 				    requests that the nominating committee
 				    fill the position. </t>
 
-				<t> The Managing Director, IETF Secretariat of the IETF
-				    informs the nominating committee of the
-				    mid-term vacancy. </t>
+				<t> The IAB Chair (or the Managing Director, 
+					IETF Secretariat, if no Chair has been named 
+					or the vacancy was created via the departure 
+					of the IAB Chair) informs the nominating committee 
+					of the mid-term vacancy. </t>
 
 				<t> The nominating committee acts on the
 				    request to fill the mid-term vacancy. </t>
@@ -1918,6 +1907,11 @@
 		<t> Added references to appropriate IASA2 documents. </t>
 			
 		<t> Corrected a few grammatical errors. </t>
+		
+		<t>Modified the Advice and Consent model to enable IESG, IAB, and IETF LLC to 
+			communicate directly with the NomCom rather than via the 
+			Managing Director, IETF Secretariat.</t>
+		
 	    </list> </t>
 </section>
 
