@@ -11,6 +11,7 @@
 <!ENTITY RFC6859 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6859.xml">
 <!ENTITY RFC7437 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.7437.xml">
 <!ENTITY I-D.ietf-iasa2-struct SYSTEM "http://xml.resource.org/public/rfc/bibxml3/reference.I-D.ietf-iasa2-struct.xml">
+<!ENTITY I-D.ietf-iasa2-trust-update SYSTEM "http://xml.resource.org/public/rfc/bibxml3/reference.I-D.ietf-iasa2-trust-update.xml">
 ]>
 
 <?xml-stylesheet type="text/xsl" href="rfc2629.xslt" ?>
@@ -23,14 +24,9 @@
 <?rfc compact="yes"?>
 <?rfc subcompact="no"?>
   
-<!--
-<rfc category="bcp" docName="draft-ietf-iasa2-rfc7437bis"
-     ipr="trust200902" obsoletes="3777, 5078, 5633, 5680, 6859, 7437"> 
--->
-
 <rfc
     category="bcp"
-    docName="draft-ietf-iasa2-rfc7437bis-00"
+    docName="draft-ietf-iasa2-rfc7437bis-01"
     obsoletes="7437"
     ipr="trust200902">
 
@@ -90,12 +86,12 @@
 -->
 
 <abstract>
-	<t> The process by which the members of the IAB and IESG, and
-	some members of the IETF LLC are selected, confirmed, and
-	recalled is specified in this document.  This document is a
-	self-consistent, organized compilation of the process as it was
-	known at the time of publication of RFC 3777, with various
-	updates since that version was published.</t>
+	<t> The process by which the members of the IAB and IESG, some
+	trustees of the IETF Trust, and
+	some directors of the IETF LLC are selected, confirmed, and
+	recalled is specified in this document.  This document based on
+	RFC3777 and RFC7437 and has been updated to reflect the changes
+	introduced by IASA 2.0.</t>
 
 	<t>This document obsoletes RFC7437.</t>
 	
@@ -107,17 +103,26 @@
 <middle>
 
 <section anchor="intro" title="Introduction">
-	<t> This document is a revision of and supercedes BCP 10.  It is in essence a republishing 
-		of <xref target="RFC3777"/> and the other RFCs that updated that document into a 
-		single specification.  The result is a complete specification of the process by which 
-		members of the Internet Architecture Board (IAB) and Internet Engineering Steering 
-		Group (IESG), and some members of the IETF Administration LLC (IETF LLC), are selected, 
-		confirmed, and recalled. </t>
+
+	<t> This document is a revision of <xref target="RFC7437"/> that
+	updates it to be consistent with the IASA 2.0 changes.  RFC7437
+	was based on <xref target="RFC3777"/> that consolidated and updated
+	other RFCs that updated that document into a single
+	specification.  The result is a complete specification of the
+	process by which members of the Internet Architecture Board (IAB)
+	and Internet Engineering Steering Group (IESG), some trustees of
+	the IETF Trust, and some directors of the IETF Administration LLC
+	(IETF LLC), are selected, confirmed, and recalled. </t>
+
+	<t>Section 2 of <xref target="I-D.ietf-iasa2-trust-update"/>
+	provides further details about the IETF Trust trustees
+	positions that are filled by the IETF Nominating Committee
+	(NomCom). </t>
 
 	<t>Section 4 of <xref target="I-D.ietf-iasa2-struct"/> provides further details about the 
-		IETF LLC Board Director positions that are filled by the IETF nominating committee
-		(NomCom). </t>
+		IETF LLC Board Director positions that are filled by the NomCom. </t>
 
+		
 	<t>The following two assumptions continue to be true of this specification:
 		<list style="numbers">
 			<t> The Internet Research Task Force (IRTF) and
@@ -155,22 +160,24 @@
 			<t hangText="Nominating Committee Operation:"> This
 				is the set of principles, rules, and
 				constraints that guide the activities of
-				the nominating committee, including the
+				the NomCom, including the
 				confirmation process. </t>
 
-			<t hangText="Member Recall:"> This is the process by
+			<t hangText="Member, Trustee, and Director Recall:"> This is the process by
 				which the behavior of a sitting member of the
-				IETF LLC, IESG, or IAB may be questioned, perhaps
+				IESG, or IAB, IETF Trust Trustee, or IETF
+				LLC Director may be questioned, perhaps
 				resulting in the removal of the sitting
 				member. See <xref target="defs"/> for a description of 
 				what a sitting member means for each of these groups. </t>
-		    </list> </t>
+
+        </list> </t>
 
 		<t> A final section describes how this document differs from <xref target="RFC3777"/> 
 			and <xref target="RFC7437"/>. </t>
 
 		<t> An appendix of useful facts and practices collected from
-		previous nominating committees is also included. </t>
+		previous NomComs is also included. </t>
 
      <t>
        This document updates the IAB, IESG, and IAOC Selection, Confirmation, and Recall Process
@@ -190,21 +197,21 @@
 		    reader.
 
 		    <list style="hanging">
-			<t hangText="candidate:"> A nominee who has been
+			<t hangText="Candidate:"> A nomine who has been
 				selected to be considered for confirmation by
 				a confirming body. </t>
 
-			<t hangText="confirmed candidate:"> A candidate that
+			<t hangText="Confirmed Candidate:"> A candidate that
 				has been reviewed and approved by a
 				confirming body. </t>
 
-			<t hangText="nominating committee term:"> The term
+			<t hangText="Nominating Committee Term:"> The term
 				begins when its members are officially
 				announced, which is expected to be prior to
 				the Third IETF to ensure it is fully
 				operational at the Third IETF.  The term ends
 				at the Third IETF (not three meetings) after
-				the next nominating committee's term
+				the next NomCom's term
 				begins. </t>
 
 			<t hangText="IETF Executive Director:"> The person
@@ -217,19 +224,31 @@
 				Secretariat".</t>
 
 			<t hangText="Managing Director, IETF Secretariat:">
-			        The person The person charged with
+			        The person charged with
 			        operation of the IETF Secretariat function.  (See
 			        Section 2 of <xref target="RFC3710"/>).</t>
 
 
-			<t hangText="nominee:"> A person who is being or has
-				been considered for one or more open positions
-				of the IESG, IAB, or IETF LLC. </t>
+			<t hangText="Nominee:"> A person who is being or
+			has been considered for one or more open
+			positions of the IESG, IAB, IETF Trust trustee or
+			IETF LLC. </t>
 
-			<t hangText="sitting member:"> A person who is
-				currently serving a term of membership in the
-				IESG or IAB, as a Trustee for the Internet Society, 
-				or as a Director for the IETF LLC. </t>
+			<t hangText="Sitting Member:"> A person who is
+			currently serving as a member of the IESG or IAB.
+                         <!--
+			, or as a Trustee for the Internet Society
+                        -->
+			</t>
+
+			<t hangText="Sitting Director:"> A person who is
+			currently serving as a Director of the
+			IETF LLC. </t>
+
+                        <t hangText="Sitting IETF Trust trustee:"> A person who is
+			currently serving as a Trustee of the IETF
+			Trust.</t>
+			
 		    </list> </t>
 	</section>
 
@@ -258,10 +277,10 @@
 
 			    <list style="numbers">
 				<t> The selection and organization of the
-				    nominating committee members. </t>
+				    NomCom members. </t>
 
 				<t> The selection of candidates by the
-				    nominating committee. </t>
+				    NomCom. </t>
 
 				<t> The confirmation of the candidates. </t>
 			    </list> </t>
@@ -276,35 +295,35 @@
 
 		<section anchor="gen_func"
 		         title="Nominating Committee Principal Functions">
-			<t> The principal functions of the nominating
-			    committee are to review each open IESG, IAB, and
-			    IETF LLC position and to nominate either its incumbent
-			    or a superior candidate. </t>
+			<t> The principal functions of the NomCom are to
+			review each open IESG, IAB, and IETF LLC position
+			and to nominate either its incumbent or a
+			superior candidate. </t>
 
 			<t> Although there is no term limit for serving in
-			    any IESG, IAB, or IETF LLC position, the nominating
-			    committee may use length of service as one of its
+			    any IESG, IAB, or IETF LLC position, the NomCom
+			    may use length of service as one of its
 			    criteria for evaluating an incumbent. </t>
 
-			<t> The nominating committee does not select the
+			<t> The NomCom does not select the
 			    open positions to be reviewed; it is instructed
 			    as to which positions to review. </t>
 
-			<t> The nominating committee will be given the titles
+			<t> The NomCom will be given the titles
 			    of the positions to be reviewed and a brief
 			    summary of the desired expertise of the candidate
 			    that is nominated to fill each position. </t>
 
-			<t> Incumbents must notify the nominating committee
+			<t> Incumbents must notify the NomCom
 			    if they wish to be nominated. </t>
 
-			<t> The nominating committee does not confirm its
+			<t> The NomCom does not confirm its
 			    candidates; it presents its candidates to the
 			    appropriate confirming body as indicated
 			    below. </t>
 
-			<t> A superior candidate is one who the nominating
-			    committee believes would contribute in such a
+			<t> A superior candidate is one who the
+			    NomCom believes would contribute in such a
 			    way as to improve or enhance the body to which
 			    he or she is nominated. </t>
 		</section>
@@ -312,21 +331,23 @@
 		<section anchor="gen_positions"
 		         title="Positions To Be Reviewed">
 			<t> Approximately one-half of each of the then current
-			    IESG and IAB positions, and one IETF LLC position, is
-			    selected to be reviewed each year. </t>
+			IESG and IAB positions, and one IETF Trust
+			and IETF LLC position, is
+			selected to be reviewed each year. </t>
 
 			<t> The intent of this rule is to ensure the
 			review of approximately one-half of each of the
-			IESG and IAB sitting members, and one of the
-			three nominating committee nominated IETF LLC
-			positions, each year.  It is recognized that
-			circumstances may exist that will require the
-			nominating committee to review more or less than
-			the usual number of positions, e.g., if the IESG,
-			IAB, or IETF LLC have reorganized prior to this
-			process and created new positions, if there are
-			an odd number of current positions, or if a
-			member unexpectedly resigns. </t>
+			IESG and IAB sitting members, one of the three
+			NomCom nominated IETF LLC director
+			positions, and one of the three nominated IETF Trust
+			trustee positions, each year.  It is recognized
+			that circumstances may exist that will require
+			the NomCom to review more or less
+			than the usual number of positions, e.g., if the
+			IESG, IAB, IETF Trust, or IETF LLC have reorganized prior to
+			this process and created new positions, if there
+			are an odd number of current positions, or if a
+			member or director unexpectedly resigns. </t>
 		</section>
 
 		<section anchor="gen_terms" title="Term Lengths">
@@ -336,7 +357,7 @@
 			    years that best facilitates the review of
 			    one-half of the members each year.</t>
 			
-			<t> Confirmed IETF LLC candidates are expected to
+			<t> Confirmed IETF LLC director candidates are expected to
 			serve at least a three-year term, except if a
 			nominating or selection body decides to use a
 			shorter term to allow for initial staggered
@@ -346,25 +367,35 @@
 			guidance on terms length and term limits for the
 			IETF LLC. </t>
 
+			<t> Confirmed IETF Trust trustee candidates are expected to
+			serve at least a three-year term, except if a
+			nominating or selection body decides to use a
+			shorter term to allow for initial staggered
+			appointments. Please refer to Section 2. of <xref
+			target="I-D.ietf-iasa2-trust-update"/> for additional
+			guidance on terms length and term limits for the
+			IETF Trust. </t>
+			
 			<t> The term of a confirmed candidate selected
-			    according to the mid-term vacancy rules may be
-			    less than a full term (two years for IESG and IAB, 
-				three years for IETF LLC), as stated elsewhere in this
-			    document. </t>
+			according to the mid-term vacancy rules may be
+			less than a full term (two years for IESG and
+			IAB, three years for the IETF Trust and IETF
+			LLC), as stated elsewhere in this document. </t>
 
-			<t> It is consistent with this rule for the nominating
-			    committee to choose one or more of the currently
+			<t> It is consistent with this rule for the NomCom
+			    to choose one or more of the currently
 			    open positions to which it may assign a term of
 			    not more than three years in order to ensure the
 			    ideal application of this rule in the future. </t>
 
-			<t> It is consistent with this rule for the nominating
-			    committee to choose one or more of the currently
-			    open positions that share responsibilities with
-			    other positions (both those being reviewed and
-			    those sitting) to which it may assign a term of
-			    not more than three years to ensure that all such
-			    members will not be reviewed at the same time. </t>
+			<t> It is consistent with this rule for the
+			NomCom to choose one or more of the
+			currently open positions that share
+			responsibilities with other positions (both those
+			being reviewed and those sitting) to which it may
+			assign a term of not more than three years to
+			ensure that all such members or directors will
+			not be reviewed at the same time. </t>
 
 			<t> All sitting member terms end during the First IETF
 			    meeting corresponding to the end of the term for
@@ -389,10 +420,15 @@
 			    terms overlap with the terms of the sitting
 			    members for the entire week of the meeting. </t>
 					
-			<t> For confirmed candidates of the IETF LLC, the
-			    term begins at the next appropriate IETF LLC Board 
-				meeting or as dictated by the policies and 
-				procedures of the IETF LLC. </t>
+			<t> For confirmed trustee candidates of the IETF
+		        Trust, the term begins at the next IETF Trust
+			or as dictated by the policies
+			and procedures of the IETF Trust. </t>
+
+			<t> For confirmed director candidates of the IETF
+			LLC, the term begins at the next appropriate IETF
+			LLC Board meeting or as dictated by the policies
+			and procedures of the IETF LLC. </t>
 
 			<t> For candidates confirmed under the mid-term
 			    vacancy rules, the term begins as soon as possible
@@ -405,21 +441,21 @@
 			    namely:
 
 			    <list style="numbers">
-				<t> When there is only one official nominating
-				    committee, the body with the mid-term
+				<t> When there is only one official NomCom,
+				    the body with the mid-term
 				    vacancy relegates the responsibility to
 				    fill the vacancy to it.  If the mid-term
 				    vacancy occurs during the period of time
 				    that the term of the prior year's
-				    nominating committee overlaps with the
-				    term of the current year's nominating
-				    committee, the body with the mid-term
+				    NomCom overlaps with the
+				    term of the current year's
+				    NomCom, the body with the mid-term
 				    vacancy must relegate the responsibility
 				    to fill the vacancy to the prior year's
-				    nominating committee. </t>
+				    NomCom. </t>
 
-				<t> If it is the case that the nominating
-				    committee is reconvening to fill the
+				<t> If it is the case that the NomCom
+				    is reconvening to fill the
 				    mid-term vacancy, then the completion of
 				    the candidate selection and confirmation
 				    process is due within six weeks, with all
@@ -457,7 +493,7 @@
 			    relates to specific nominees, candidates, and
 			    confirmed candidates are confidential. </t>
 
-			<t> The nominating committee and confirming body
+			<t> The NomCom and confirming body
 			    members will be exposed to confidential
 			    information as a result of their deliberations,
 			    their interactions with those they consult, and
@@ -468,15 +504,15 @@
 			    sensitivity. </t>
 
 			<t> It is consistent with this rule for current
-			    nominating committee members who have served on
-			    prior nominating committees to advise the current
+			    NomCom members who have served on
+			    prior NomComs to advise the current
 			    committee on deliberations and results of the
 			    prior committee, as necessary and appropriate. </t>
 
 			<t> The list of nominees willing to be considered for
-			    positions under review in the current nominating
-			    committee cycle is not confidential.  The nominating
-			    committee may disclose a list of names of nominees
+			    positions under review in the current NomCom
+			    cycle is not confidential.  The NomCom
+			    may disclose a list of names of nominees
 			    who are willing to be considered for positions under
 			    review to the community, in order to obtain feedback
 			    from the community on these nominees. </t>
@@ -486,29 +522,29 @@
 			    who are willing to be considered for the position
 			    under review. </t>
 
-			<t> The nominating committee may choose not to include
+			<t> The NomCom may choose not to include
 			    some names in the disclosed list, at their
 			    discretion. </t>
 
-			<t> The nominating committee may disclose an updated
+			<t> The NomCom may disclose an updated
 			    list, at its discretion.  For example, the
-			    nominating committee might disclose an updated list
+			    NomCom might disclose an updated list
 			    if it identifies errors/omissions in a previously
 			    disclosed version of the disclosed list, or if the
-			    nominating committee finds it necessary to call for
+			    NomCom finds it necessary to call for
 			    additional nominees, and these nominees indicate a
-			    willingness to be considered before the nominating
-			    committee has completed its deliberations. </t>
+			    willingness to be considered before the NomCom
+			    has completed its deliberations. </t>
 
 			<t> Nominees may choose to ask people to provide
-			    feedback to the nominating committee but should
+			    feedback to the NomCom but should
 			    not encourage any public statements of support.
-			    Nominating committees should consider
+			    NomComs should consider
 			    nominee-encouraged lobbying and campaigning to be
 			    unacceptable behavior. </t>
 
 			<t> IETF community members are encouraged to provide
-			    feedback on nominees to the nominating committee
+			    feedback on nominees to the NomCom
 			    but should not post statements of support/non-support
 			    for nominees in any public forum. </t>
 		</section>
@@ -521,21 +557,23 @@
 			<section anchor="gen_model_1"
 			         title="Positions To Be Reviewed">
 								
-				<t> The chair of the IESG, IAB, and
-				    IETF LLC each informs the nominating committee 
-					of their respective positions to be reviewed. </t>
+				<t> The chair of the IESG, IAB, IETF
+				Trust and IETF LLC each informs the
+				NomCom of their respective
+				positions to be reviewed. </t>
 
-				<t> The IESG, IAB, and IETF LLC are responsible for
-				    providing a summary of the expertise desired
-				    of the candidates selected for their
-				    respective open positions. The summaries are 
-				    provided to the nominating committee for its
-				    consideration. </t>
+				<t> The IESG, IAB, IETF Trust and IETF
+				LLC are responsible for providing a
+				summary of the expertise desired of the
+				candidates selected for their respective
+				open positions. The summaries are
+				provided to the NomCom for
+				its consideration. </t>
 			</section>
 
 			<section anchor="gen_model_2"
 			         title="Candidate Selection">
-				<t> The nominating committee selects
+				<t> The NomCom selects
 				    candidates based on its understanding of
 				    the IETF community's consensus of the
 				    qualifications required and advises each
@@ -546,15 +584,18 @@
 			<section anchor="gen_model_3" title="Candidate Review">
 				<t> The confirming bodies review their
 				    respective candidates, they may at their
-				    discretion communicate with the nominating
-				    committee, and then consent to some, all,
+				    discretion communicate with the NomCom,
+				    and then consent to some, all,
 				    or none of the candidates. </t>
 
 				<t> The sitting IAB members review the IESG
 				    candidates. </t>
 
 				<t> The Internet Society Board of Trustees
-				    reviews the IAB candidates. </t>
+				reviews the IAB candidates. </t>
+
+				<t>The sitting IESG members review the
+				IETF Trust trustee Candidates.</t>
 
 				<t> The IETF LLC candidate is reviewed as
 				    specified in <xref target="I-D.ietf-iasa2-struct"/>. </t>
@@ -563,7 +604,7 @@
 				    using all information and any means
 				    acceptable to them, including but not
 				    limited to the supporting information
-				    provided by the nominating committee,
+				    provided by the NomCom,
 				    information known personally to members of
 				    the confirming bodies and shared within
 				    the confirming body, the results of
@@ -573,26 +614,26 @@
 				    IETF community. </t>
 
 				<t> If all of the candidates are confirmed,
-				    the job of the nominating committee with
+				    the job of the NomCom with
 				    respect to those open positions is
 				    complete. </t>
 
 				<t> If some or none of the candidates
 				    submitted to a confirming body are
 				    confirmed, the confirming body should
-				    communicate with the nominating committee
+				    communicate with the NomCom
 				    both to explain the reason why all the
 				    candidates were not confirmed and to
-				    understand the nominating committee's
+				    understand the NomCom's
 				    rationale for its candidates. </t>
 
 				<t> The confirming body may reject individual
-				    candidates, in which case the nominating
-				    committee must select alternate candidates
+				    candidates, in which case the NomCom
+				    must select alternate candidates
 				    for the rejected candidates. </t>
 
 				<t> Any additional time required by the
-				    nominating committee should not exceed its
+				    NomCom should not exceed its
 				    maximum time allotment. </t>
 			</section>
 
@@ -624,17 +665,16 @@
 				<t> The confirming body must make its decision
 				    within a reasonable time frame.  The
 				    results from the confirming body must be
-				    reported promptly to the nominating
-				    committee. </t>
+				    reported promptly to the NomCom.</t>
 			</section>
 		</section>
 	
-		<section anchor="gen_sitting" title="Sitting Members">
-			<t> The following rules apply to nominees and candidates
-			    who are currently sitting members of the IESG, IAB,
-			    or IETF LLC and who are not sitting in an open
-			    position being filled by the nominating
-			    committee. </t>
+		<section anchor="gen_sitting" title="Sitting Members and Directors">
+			<t> The following rules apply to nominees and
+			candidates who are currently sitting members of
+			the IESG or IAB, or IETF LLC directors and who
+			are not sitting in an open position being filled
+			by the NomCom. </t>
 	
 			<t> The confirmation of a candidate to an open
 			    position does not automatically create a vacancy
@@ -643,7 +683,7 @@
 			    can not exist until, first, the candidate formally
 			    resigns from the current position and, second, the
 			    body with the vacancy formally decides for itself
-			    that it wants the nominating committee to fill the
+			    that it wants the NomCom to fill the
 			    mid-term vacancy according to the rules for a
 			    mid-term vacancy documented elsewhere in this
 			    document. </t>
@@ -651,7 +691,7 @@
 			<t> The resignation should be effective as of when
 			    the term of the new position begins.  The
 			    resignation may remain confidential to the IESG,
-			    IAB, IETF LLC, and nominating committee until the
+			    IAB, IETF LLC, and NomCom until the
 			    confirmed candidate is announced for the new
 			    position.  The process, according to rules set out
 			    elsewhere in this document, of filling the seat
@@ -661,7 +701,7 @@
 			<t> Filling a mid-term vacancy is a separate and
 			    independent action from the customary action of
 			    filling open positions.  In particular, a
-			    nominating committee must complete its job with
+			    NomCom must complete its job with
 			    respect to filling the open positions and then
 			    separately proceed with the task of filling the
 			    mid-term vacancy according to the rules for a
@@ -680,7 +720,7 @@
 			    the following order:
 
 			    <list style="numbers">
-				<t> The nominating committee completes the
+				<t> The NomCom completes the
 				    advice and consent process for the open
 				    position being filled by the candidate
 				    currently sitting on the IAB. </t>
@@ -690,16 +730,16 @@
 				    IAB. </t>
 
 				<t> The IAB with the new mid-term vacancy
-				    requests that the nominating committee
+				    requests that the NomCom
 				    fill the position. </t>
 
 				<t> The IAB Chair (or the Managing Director, 
 					IETF Secretariat, if no Chair has been named 
 					or the vacancy was created via the departure 
-					of the IAB Chair) informs the nominating committee 
+					of the IAB Chair) informs the NomCom 
 					of the mid-term vacancy. </t>
 
-				<t> The nominating committee acts on the
+				<t> The NomCom acts on the
 				    request to fill the mid-term vacancy. </t>
 			    </list> </t>
 		</section>
@@ -719,66 +759,65 @@
 
 	<section anchor="selection" title="Nominating Committee Selection">
 		<t> The following set of rules apply to the creation of the
-		    nominating committee and the selection of its members. </t>
+		    NomCom and the selection of its members. </t>
 
 		<section anchor="sel_timeline" title="Timeline">
 			<t> The completion of the process of selecting and
-			    organizing the members of the nominating committee
+			    organizing the members of the NomCom
 			    is due within three months. </t>
 
 			<t> The completion of the selection and organization
 			    process is due at least one month prior to the
-			    Third IETF.  This ensures the nominating committee
+			    Third IETF.  This ensures the NomCom
 			    is fully operational and available for interviews
 			    and consultation during the Third IETF. </t>
 		</section>
 
 		<section anchor="sel_term" title="Term">
-			<t> The term of a nominating committee is expected to
+			<t> The term of a NomCom is expected to
 			    be 15 months. </t>
 
 			<t> It is the intent of this rule that the end of a
-			    nominating committee's term overlap by
+			    NomCom's term overlap by
 			    approximately three months the beginning of the
-			    term of the next nominating committee. </t>
+			    term of the next NomCom. </t>
 
-			<t> The term of a nominating committee begins when its
+			<t> The term of a NomCom begins when its
 			    members are officially announced.  The term ends
 			    at the Third IETF (not three meetings), i.e., the
-			    IETF meeting after the next nominating committee's
+			    IETF meeting after the next NomCom's
 			    term begins. </t>
 
 			<t> A term is expected to begin at least two months
-			    prior to the Third IETF to ensure the nominating
-			    committee has at least one month to get organized
+			    prior to the Third IETF to ensure the NomCom
+			    has at least one month to get organized
 			    before preparing for the Third IETF. </t>
 
-			<t> A nominating committee is expected to complete
+			<t> A NomCom is expected to complete
 			    any work in progress before it is dissolved at
 			    the end of its term. </t>
 
-			<t> During the period of time when the terms of the
-			    nominating committees overlap, all mid-term
-			    vacancies are to be relegated to the prior year's
-			    nominating committee.  The prior year's nominating
-			    committee has no other responsibilities during the
-			    overlap period.  At all times other than the
-			    overlap period, there is exactly one official
-			    nominating committee and it is responsible for
-			    all mid-term vacancies. </t>
+			<t> During the period of time when the terms of
+			the NomComs overlap, all mid-term vacancies are
+			to be relegated to the prior year's NomCom.  The
+			prior year's NomCom has no other responsibilities
+			during the overlap period.  At all times other
+			than the overlap period, there is exactly one
+			official NomCom and it is responsible for all
+			mid-term vacancies. </t>
 
-			<t> When the prior year's nominating committee is
-			    filling a mid-term vacancy during the period of
-			    time that the terms overlap, the nominating
-			    committees operate independently.  However, some
-			    coordination is needed between them.  Since the
-			    prior year's Chair is a non-voting advisor to the
-			    current nominating committee, the coordination is
-			    expected to be straightforward. </t>
+			<t> When the prior year's NomCom is filling a
+			mid-term vacancy during the period of time that
+			the terms overlap, the NomCom operate
+			independently.  However, some coordination is
+			needed between them.  Since the prior year's
+			Chair is a non-voting advisor to the current
+			NomCom, the coordination is expected to be
+			straightforward. </t>
 		</section>
 
 		<section anchor="sel_structure" title="Structure">
-			<t> The nominating committee comprises at least a
+			<t> The NomCom comprises at least a
 			    Chair, 10 voting volunteers, two liaisons,
 			    and an advisor. </t>
 
@@ -809,10 +848,10 @@
 			    document. </t>
 
 			<t> The Internet Society Board of Trustees may appoint
-			    a liaison to the nominating committee at its own
+			    a liaison to the NomCom at its own
 			    discretion. </t>
 
-			<t> The Chair of last year's nominating committee
+			<t> The Chair of last year's NomCom
 			    serves as an advisor according to rules stated
 			    elsewhere in this document. </t>
 
@@ -823,17 +862,17 @@
 		</section>
 
 		<section anchor="sel_chair_duties" title="Chair Duties">
-			<t> The Chair of the nominating committee is
-			    responsible for ensuring the nominating committee
+			<t> The Chair of the NomCom is
+			    responsible for ensuring the NomCom
 			    completes its assigned duties in a timely fashion
 			    and performs in the best interests of the IETF
 			    community. </t>
 
-			<t> The Chair must be thoroughly familiar with the
-			    rules and guidance indicated throughout this
-			    document.  The Chair must ensure the nominating
-			    committee completes its assigned duties in a
-			    manner that is consistent with this document. </t>
+			<t> The Chair must be thoroughly familiar with
+			the rules and guidance indicated throughout this
+			document.  The Chair must ensure the NomCom
+			completes its assigned duties in a manner that is
+			consistent with this document. </t>
 
 			<t> The Chair must attest by proclamation at a plenary
 			    session of the First IETF that the results of
@@ -847,12 +886,12 @@
 		<section anchor="sel_chair_selection" title="Chair Selection">
 			<t> The Internet Society President appoints the
 			    Chair, who must meet the same requirements for
-			    membership in the nominating committee as a
+			    membership in the NomCom as a
 			    voting volunteer. </t>
 
-			<t> The nominating committee Chair must agree to
+			<t> The NomCom Chair must agree to
 			    invest the time necessary to ensure that the
-			    nominating committee completes its assigned duties
+			    NomCom completes its assigned duties
 			    and to perform in the best interests of the
 			    IETF community in that role. </t>
 
@@ -880,13 +919,13 @@
 
 			<t> Any such appointment must be temporary and does
 			    not absolve the Chair of any or all responsibility
-			    for ensuring the nominating committee completes
+			    for ensuring the NomCom completes
 			    its assigned duties in a timely fashion. </t>
 		</section>
 
 		<section anchor="sel_liaisons_1" title="Liaisons">
 			<t> Liaisons are responsible for ensuring the
-			    nominating committee in general and the Chair in
+			    NomCom in general and the Chair in
 			    particular execute their assigned duties in the
 			    best interests of the IETF community. </t>
 
@@ -897,7 +936,7 @@
 			    believe it would be helpful to the committee. </t>
 
 			<t> Liaisons from the IESG and IAB are expected
-			    to provide information to the nominating committee
+			    to provide information to the NomCom
 			    regarding the operation, responsibility, and
 			    composition of their respective bodies. </t>
 
@@ -909,9 +948,9 @@
 			<t> Liaisons from the IESG, IAB, and Internet
 			    Society Board of Trustees (if one was appointed)
 			    are expected to review the operation and executing
-			    process of the nominating committee and to report
+			    process of the NomCom and to report
 			    any concerns or issues to the Chair of the
-			    nominating committee immediately.  If they can not
+			    NomCom immediately.  If they can not
 			    resolve the issue between themselves, liaisons must
 			    report it according to the dispute resolution
 			    process stated elsewhere in this document. </t>
@@ -920,22 +959,29 @@
 			    assist the committee in preparing the testimony it
 			    is required to provide with its candidates. </t>
 
-			<t> Liaisons may have other nominating committee
-			    responsibilities as required by their respective
-			    organizations or requested by the nominating
-			    committee, except that such responsibilities may
-			    not conflict with any other provisions of this
-			    document. </t>
+			<t> Liaisons may have other NomCom
+			responsibilities as required by their respective
+			organizations or requested by the NomCom, except
+			that such responsibilities may not conflict with
+			any other provisions of this document. </t>
 
 			<t> Liaisons do not vote on the selection of
 			    candidates. </t>
 		</section>
 
 		<section anchor="sel_liaisons_2" title="Liaison Appointment">
+
+				<t>DISCUSSION
+				<list>
+                                <t>Should the IETF Trust and IETF LLC appoint a liaisons
+				to the NomCom?
+				</t>
+				</list></t>
+
 			<t> The sitting IAB and IESG members each
 			    appoint a liaison from their current membership,
 			    someone who is not sitting in an open position, to
-			    serve on the nominating committee. </t>
+			    serve on the NomCom. </t>
 		</section>
 
 		<section anchor="sel_advisors" title="Advisors">
@@ -948,17 +994,17 @@
 		</section>
 
 		<section anchor="sel_chair_past" title="Past Chair">
-			<t> The Chair of the prior year's nominating committee
+			<t> The Chair of the prior year's NomCom
 			    serves as an advisor to the current committee. </t>
 
-			<t> The prior year's Chair is expected to review the
-			    actions and activities of the current Chair and to
-			    report any concerns or issues to the nominating
-			    committee Chair immediately.  If they can not
-			    resolve the issue between themselves, the prior
-			    year's Chair must report it according to the
-			    dispute resolution process stated elsewhere in this
-			    document. </t>
+			<t> The prior year's Chair is expected to review
+			the actions and activities of the current Chair
+			and to report any concerns or issues to the
+			NomCom Chair immediately.  If they can not
+			resolve the issue between themselves, the prior
+			year's Chair must report it according to the
+			dispute resolution process stated elsewhere in
+			this document. </t>
 
 			<t> The prior year's Chair may select a designee from
 			    a pool composed of the voting volunteers of the
@@ -987,11 +1033,11 @@
 
 		<section anchor="sel_volunteers" title="Voting Volunteers">
 			<t> Voting volunteers are responsible for completing the
-			    tasks of the nominating committee in a timely
+			    tasks of the NomCom in a timely
 			    fashion. </t>
 
 			<t> Each voting volunteer is expected to participate in
-			    all activities of the nominating committee with a
+			    all activities of the NomCom with a
 			    level of effort approximately equal to all other
 			    voting volunteers.  Specific tasks to be completed
 			    are established and managed by the Chair according
@@ -1000,7 +1046,7 @@
 
 		<section anchor="sel_milestones" title="Milestones">
 			<t> The Chair must establish and announce milestones for
-			    the selection of the nominating committee
+			    the selection of the NomCom
 			    members. </t>
 
 			<t> There is a defined time period during which the
@@ -1016,38 +1062,36 @@
 			    meeting of the year) obtains the list of positions
 			    to be reviewed and announces it along with a
 			    solicitation for names of volunteers from the IETF
-			    community willing to serve on the nominating
-			    committee. </t>
+			    community willing to serve on the NomCom.</t>
 
 			<t> If the Managing Director, IETF Secretariat issues the
 			    solicitation for volunteers, the Managing Director, IETF Secretariat
 			    must also collect responses to the
 			    solicitation and provide the names of volunteers to
-			    the incoming nominating committee Chair when the
-			    incoming nominating committee Chair is named. </t>
+			    the incoming NomCom Chair when the
+			    incoming NomCom Chair is named. </t>
 
 			<t> At the Chair's request, the IETF Secretariat may
 			    perform other clerical support tasks, as long as
-			    the task being performed does not require nominating
-			    committee Chair judgment, in the nominating
-			    committee Chair's opinion, and as long as the
+			    the task being performed does not require NomCom
+			    Chair judgment, in the NomCom
+			    Chair's opinion, and as long as the
 			    community is appropriately notified that this
 			    request is being made.  This request may come from
-			    the incoming nominating committee Chair (if one has
-			    been selected for this nominating committee cycle)
-			    or the previous nominating committee Chair (if the
-			    search for an incoming nominating committee Chair is
+			    the incoming NomCom Chair (if one has
+			    been selected for this NomCom cycle)
+			    or the previous NomCom Chair (if the
+			    search for an incoming NomCom Chair is
 			    still underway). </t>
 
 			<t> The solicitation must permit the community at
 			    least 30 days during which they may choose to
-			    volunteer to be selected for the nominating
-			    committee. </t>
+			    volunteer to be selected for the NomCom.</t>
 
 			<t> The list of open positions is published with the
 			    solicitation to facilitate community members
 			    choosing between volunteering for an open position
-			    and volunteering for the nominating committee. </t>
+			    and volunteering for the NomCom. </t>
 		</section>
 
 		<section anchor="sel_qualify" title="Volunteer Qualification">
@@ -1057,7 +1101,7 @@
 
 			<t> The five meetings are the five most recent meetings
 			    that ended prior to the date on which the
-			    solicitation for nominating committee volunteers
+			    solicitation for NomCom volunteers
 			    was submitted for distribution to the IETF
 			    community. </t>
 
@@ -1079,14 +1123,14 @@
 		<section anchor="sel_disqualify" title="Not Qualified">
 			
 			<t> Any person who serves on the Internet Society
-			Board of Trustees, the IETF LLC Board of
+			Board of Trustees, the IETF Trust, the IETF LLC Board of
 			Directors, the IAB, or the IESG, including those
 			who serve on these bodies in ex officio
 			positions, may not volunteer to serve as voting
-			members of the nominating committee. In addition,
+			members of the NomCom. In addition,
 			employees or contractors of the IETF LLC
 			may not volunteer to serve as voting members of
-			the nominating committee.  Liaisons to these
+			the NomCom.  Liaisons to these
 			bodies from other bodies or organizations are not
 			excluded by this rule.</t>
 
@@ -1136,21 +1180,20 @@
 		         title="Announcement of Selection Results">
 			<t> The Chair randomly selects the 10 voting
 			    volunteers from the pool of names of volunteers and
-			    announces the members of the nominating
-			    committee. </t>
+			    announces the members of the NomCom.</t>
 
-			<t> No more than two volunteers with the same primary
-			    affiliation may be selected for the nominating
-			    committee.  The Chair reviews the primary
-			    affiliation of each volunteer selected by the
-			    method in turn.  If the primary affiliation for a
-			    volunteer is the same as two previously selected
-			    volunteers, that volunteer is removed from
-			    consideration and the method is repeated to identify
-			    the next eligible volunteer. </t>
+			<t> No more than two volunteers with the same
+			primary affiliation may be selected for the
+			NomCom.  The Chair reviews the primary
+			affiliation of each volunteer selected by the
+			method in turn.  If the primary affiliation for a
+			volunteer is the same as two previously selected
+			volunteers, that volunteer is removed from
+			consideration and the method is repeated to
+			identify the next eligible volunteer. </t>
 
 			<t> There must be at least two announcements of all
-			    members of the nominating committee. </t>
+			    members of the NomCom. </t>
 
 			<t> The first announcement should occur as soon after
 			    the random selection as is reasonable for the
@@ -1205,8 +1248,8 @@
 			<t> After at least one week and confirming that 10
 			    voting volunteers are ready to serve, the Chair
 			    makes the second announcement of the members of the
-			    nominating committee, which officially begins the
-			    term of the nominating committee. </t>
+			    NomCom, which officially begins the
+			    term of the NomCom. </t>
 		</section>
 
 		<section anchor="sel_organize"
@@ -1242,7 +1285,7 @@
 
 	<section anchor="operation" title="Nominating Committee Operation">
 		<t> The following rules apply to the operation of the
-		    nominating committee.  If necessary, a paragraph
+		    NomCom.  If necessary, a paragraph
 		    discussing the interpretation of each rule is
 		    included. </t>
 
@@ -1255,8 +1298,8 @@
 			    committee. </t>
 
 			<t> Exceptional circumstances will occasionally arise
-			    during the normal operation of the nominating
-			    committee.  This rule is intended to foster the
+			    during the normal operation of the NomCom.
+			    This rule is intended to foster the
 			    continued forward progress of the committee. </t>
 
 			<t> Any member of the committee may propose a rule for
@@ -1277,7 +1320,7 @@
 
 			<t> The completion of the selection process is due at
 			    least two months prior to the First IETF.  This
-			    ensures the nominating committee has sufficient time
+			    ensures the NomCom has sufficient time
 			    to complete the confirmation process. </t>
 		</section>
 
@@ -1291,7 +1334,7 @@
 
 		<section anchor="op_milestones" title="Milestones">
 			<t> The Chair must establish
-			    a set of nominating committee milestones for the candidate
+			    a set of NomCom milestones for the candidate
 			    selection and confirmation process. </t>
 
 			<t> There is a defined time period during which the
@@ -1314,7 +1357,7 @@
 			    when a decision has been made during its
 			    deliberations.  The criteria for determining closure
 			    must be established and known to all members of the
-			    nominating committee. </t>
+			    NomCom. </t>
 		</section>
 
 		<section anchor="op_quorum" title="Voting Quorum">
@@ -1327,12 +1370,12 @@
 			    voting volunteers. </t>
 
 			<t> At all other times, a quorum is present if at
-			    least 75% of the nominating committee members are
+			    least 75% of the NomCom members are
 			    participating. </t>
 		</section>
 
 		<section anchor="op_recall_1" title="Voting Member Recall">
-			<t> Any member of the nominating committee may propose
+			<t> Any member of the NomCom may propose
 			    to the committee that any other member except the
 			    Chair be recalled.  The process for recalling the
 			    Chair is defined elsewhere in this document. </t>
@@ -1373,7 +1416,7 @@
 			    replacement before proceeding. </t>
 
 			<t> If a single voting volunteer position on the
-			    nominating committee is vacated, regardless of the
+			    NomCom is vacated, regardless of the
 			    circumstances, the committee may choose to proceed
 			    with only nine voting volunteers at its own
 			    discretion.  In all other cases, a new voting member
@@ -1382,12 +1425,12 @@
 			    of the iteration prior to the actual selection as
 			    stated elsewhere in this document. </t>
 
-			<t> A change in the primary affiliation of a voting
-			    volunteer during the term of the nominating
-			    committee is not a cause to request the recall of
-			    that volunteer, even if the change would result in
-			    more than two voting volunteers with the same
-			    affiliation. </t>
+			<t> A change in the primary affiliation of a
+			voting volunteer during the term of the NomCom is
+			not a cause to request the recall of that
+			volunteer, even if the change would result in
+			more than two voting volunteers with the same
+			affiliation. </t>
 		</section>
 
 		<section anchor="op_recall_2" title="Chair Recall">
@@ -1411,7 +1454,7 @@
 		</section>
 
 		<section anchor="op_deliberations" title="Deliberations">
-			<t> All members of the nominating committee may
+			<t> All members of the NomCom may
 			    participate in all deliberations. </t>
 
 			<t> The emphasis of this rule is that no member can be
@@ -1429,7 +1472,7 @@
 			<t> The call for nominees must include a request for
 			    comments regarding the past performance of
 			    incumbents, which will be considered during the
-			    deliberations of the nominating committee. </t>
+			    deliberations of the NomCom. </t>
 
 			<t> The call must request that a nomination include a
 			    valid, working email address, a telephone number,
@@ -1443,21 +1486,21 @@
 			<t> Any member of the IETF community may nominate any
 			    member of the IETF community for any open position,
 			    whose eligibility to serve will be confirmed by the
-			    nominating committee. </t>
+			    NomCom. </t>
 
 			<t> A self-nomination is permitted. </t>
 
-			<t> Nominating committee members are not eligible to
+			<t> NomCom members are not eligible to
 			    be considered for filling any open position by
-			    the nominating committee on which they serve.  They
+			    the NomCom on which they serve.  They
 			    become ineligible as soon as the term of the
-			    nominating committee on which they serve officially
+			    NomCom on which they serve officially
 			    begins.  They remain ineligible for the duration of
-			    that nominating committee's term. </t>
+			    that NomCom's term. </t>
 
-			<t> Although each nominating committee's term overlaps
-			    with the following nominating committee's term,
-			    nominating committee members are eligible for
+			<t> Although each NomCom's term overlaps
+			    with the following NomCom's term,
+			    NomCom members are eligible for
 			    nomination by the following committee if not
 			    otherwise disqualified. </t>
 
@@ -1469,15 +1512,15 @@
 		</section>
 
 		<section anchor="op_candidates" title="Candidate Selection">
-			<t> The nominating committee selects candidates based
+			<t> The NomCom selects candidates based
 			    on its understanding of the IETF community's
 			    consensus of the qualifications required to fill
 			    the open positions. </t>
 
 			<t> The intent of this rule is to ensure that the
-			    nominating committee consults with a broad base of
+			    NomCom consults with a broad base of
 			    the IETF community for input to its deliberations.
-			    In particular, the nominating committee must
+			    In particular, the NomCom must
 			    determine if the desired expertise for the open
 			    positions matches its understanding of the
 			    qualifications desired by the IETF community. </t>
@@ -1485,14 +1528,15 @@
 			<t> The consultations are permitted to include names
 			    of nominees, if all parties to the consultation
 			    agree to observe the same confidentiality rules as
-			    the nominating committee itself, or the names are
+			    the NomCom itself, or the names are
 			    public as discussed in
 			    <xref target="gen_confidential"/>.  Feedback on
 			    individual nominees should always be
 			    confidential. </t>
 
 			<t> A broad base of the community should include the
-			    existing members of the IESG, IAB, and IETF LLC,
+			    existing members of the IESG and IAB, and
+			    IETF LLC directors,
 			    especially sitting members who share
 			    responsibilities with open positions, e.g.,
 			    co-Area Directors, and working group chairs,
@@ -1508,12 +1552,12 @@
 			    considered and must consent to their nomination
 			    prior to being chosen as candidates. </t>
 
-			<t> Although the nominating committee will make every
+			<t> Although the NomCom will make every
 			    reasonable effort to contact and to remain in
 			    contact with nominees, any nominee whose contact
 			    information changes during the process and who
 			    wishes to still be considered should inform the
-			    nominating committee of the changes. </t>
+			    NomCom of the changes. </t>
 
 			<t> A nominee's consent must be written (email is
 			    acceptable) and must include a commitment to provide
@@ -1525,19 +1569,18 @@
 
 			<t> Consenting to a nomination must occur prior to a
 			    nominee being a candidate and may occur as soon
-			    after the nomination as needed by the nominating
-			    committee. </t>
+			    after the nomination as needed by the NomCom.</t>
 
 			<t> Consenting to a nomination must not imply the
 			    nominee will be a candidate. </t>
 
-			<t> The nominating committee should help nominees
+			<t> The NomCom should help nominees
 			    provide justification to their employers. </t>
 		</section>
 
 		<section anchor="op_announce_1"
 		         title="Notifying Confirming Bodies">
-			<t> The nominating committee advises the confirming
+			<t> The NomCom advises the confirming
 			    bodies of their candidates, specifying a single
 			    candidate for each open position and testifying as
 			    to how each candidate meets the qualifications of
@@ -1553,7 +1596,7 @@
 
 			<t> The testimony may include a brief
 			    resume of the candidate and/or a brief summary of the
-			    deliberations of the nominating committee. </t>
+			    deliberations of the NomCom. </t>
 		</section>
 
 		<section anchor="op_announce_2" title="Confirming Candidates">
@@ -1577,18 +1620,18 @@
 			<t> It is not necessary to announce all confirmed
 			    candidates together. </t>
 
-			<t> The nominating committee must ensure that all
+			<t> The NomCom must ensure that all
 			    confirmed candidates are prepared to serve prior to
 			    announcing their confirmation. </t>
 		</section>
 
 		<section anchor="op_archive" title="Archives">
-			<t> The nominating committee should archive the
+			<t> The NomCom should archive the
 			    information it has collected or produced for a
 			    period of time but not to exceed its term. </t>
 
 			<t> The purpose of the archive is to assist the
-			    nominating committee should it be necessary for it
+			    NomCom should it be necessary for it
 			    to fill a mid-term vacancy. </t>
 
 			<t> The existence of an archive, how it is implemented,
@@ -1608,7 +1651,7 @@
 		    in other circumstances is beyond the scope of this
 		    document. </t>
 
-		<t> The nominating committee operates under a strict rule of
+		<t> The NomCom operates under a strict rule of
 		    confidentiality.  For this reason, when process issues arise,
 		    it is best to make every reasonable effort to resolve them
 		    within the committee.  However, when circumstances do not
@@ -1625,15 +1668,15 @@
 			    as described below to the Internet Society
 			    President. </t>
 
-			<t> As soon as the process begins, the nominating
-			    committee may continue those activities that are
+			<t> As soon as the process begins, the NomCom
+			    may continue those activities that are
 			    unrelated to the issue to be resolved except that
 			    it must not submit any candidates to a confirming
 			    body until the issue is resolved. </t>
 
 			<t> All parties to the process are subject to the
 			    same confidentiality rules as each member of the
-			    nominating committee. </t>
+			    NomCom. </t>
 
 			<t> The process should be completed within two
 			    weeks. </t>
@@ -1655,8 +1698,8 @@
 			<t> The arbiter investigates the issue making every
 			    reasonable effort to understand both sides of the
 			    issue.  Since the arbiter is subject to the same
-			    confidentiality obligations as all nominating
-			    committee members, all members are expected to
+			    confidentiality obligations as all NomCom
+			    members, all members are expected to
 			    cooperate fully with the arbiter and to provide all
 			    relevant information to the arbiter for review. </t>
 
@@ -1675,47 +1718,49 @@
 			    its resolution.  The report should include all
 			    information that in the judgment of the arbiter
 			    does not violate the confidentiality requirements
-			    of the nominating committee. </t>
+			    of the NomCom. </t>
 
 			<t> The Chair includes the dispute report when
-			    reporting on the activities of the nominating
-			    committee to the IETF community. </t>
+			reporting on the activities of the NomCom to the
+			IETF community. </t>
+
 		    </list> </t>
 	</section>
 	
-	<section anchor="recall" title="Member Recall">
+	<section anchor="recall" title="Member, Trustee, and Director Recall">
 
 		<t> The following rules apply to the recall process.  If
 		    necessary, a paragraph discussing the interpretation of
 		    each rule is included. </t>	
 		
-		<section anchor="LLC-removal" title="IETF LLC Board Member Removal">
+		<section anchor="LLC-removal" title="IETF LLC Director Removal">
 
 			<t> As described in Section 4.12 of 
 				<xref target="I-D.ietf-iasa2-struct"/>,
-				members of the IETF LLC Board  
+				directors of the IETF LLC Board  
 				may be removed 
 				with or without cause by the IETF LLC Board itself.  
 				In addition, this IETF recall process can also 
-				be used to remove or recall an IETF LLC
-		  	        member, except for the member  
+				be used to remove or recall an IETF LLC director,
+		  	        except for the director
 				appointed by the Internet Society. </t>
 
                 </section>			
 		
-           <section title="IESG and IAB Member Recall">
+           <section title="IESG and IAB Member and IETF Trust Trustee Recall">
 
 		<section anchor="recall_petition" title="Petition">
 
 			<t> At any time, at least 20 members of the IETF
-			    community, who are qualified to be voting members
-			    of a nominating committee, may request by signed
-			    petition (email is acceptable) to the Internet
-			    Society President the recall of any sitting
-			    IESG or IAB member. </t>
+			community, who are qualified to be voting members
+			of a NomCom, may request by signed
+			petition (email is acceptable) to the Internet
+			Society President the recall of any sitting IESG
+			or IAB member, or NomCom appointed
+			IETF Trust trustee. </t>
 
 			<t> All individual and collective qualifications of
-			    nominating committee eligibility are applicable,
+			    NomCom eligibility are applicable,
 			    including that no more than two signatories may
 			    have the same primary affiliation. </t>
 
@@ -1725,7 +1770,7 @@
 
 			<t> The IETF Secretariat is responsible for confirming
 			    that each signatory is qualified to be a voting
-			    member of a nominating committee.  A valid petition
+			    member of a NomCom.  A valid petition
 			    must be signed by at least 20 qualified
 			    signatories. </t>
 
@@ -1749,7 +1794,7 @@
 
 		<section anchor="recall_cmte" title="Recall Committee Creation">
 			<t> The recall committee is created according to the
-			    same rules as is the nominating committee with the
+			    same rules as is the NomCom with the
 			    qualifications that both the person being
 			    investigated and the parties requesting the recall
 			    must not be a member of the recall committee in any
@@ -1758,7 +1803,7 @@
 
 		<section anchor="recall_rules" title="Recall Committee Rules">
 			<t> The recall committee operates according to the same
-			    rules as the nominating committee with the
+			    rules as the NomCom with the
 			    qualification that there is no confirmation
 			    process. </t>
 		</section>
@@ -1787,6 +1832,11 @@
   	   </section>
 	</section>
 
+    <section anchor="IANA" title="IANA Considerations">
+      <t>No IANA actions required.</t>
+    </section>
+
+
 	<section anchor="security" title="Security Considerations">
 		<t> Any selection, confirmation, or recall process
 		    necessarily involves investigation into the qualifications
@@ -1798,12 +1848,12 @@
 		    all information not explicitly identified as suitable for
 		    public dissemination. </t>
 
-		<t> When the nominating committee decides it is necessary to
-		    share confidential or otherwise private information with
-		    others, the dissemination must be minimal and must
-		    include a prior commitment from all persons consulted to
-		    observe the same confidentiality rules as the nominating
-		    committee itself. </t>
+		<t> When the NomCom decides it is necessary to share
+		confidential or otherwise private information with
+		others, the dissemination must be minimal and must
+		include a prior commitment from all persons consulted to
+		observe the same confidentiality rules as the NomCom
+		itself. </t>
 	</section>
 
 </middle>
@@ -1819,7 +1869,7 @@
 -->
 	&RFC7437;
 	&I-D.ietf-iasa2-struct;
-
+        &I-D.ietf-iasa2-trust-update;
 </references>
 
 <references title="Informative References">
@@ -1875,51 +1925,62 @@
 	
 <section anchor="changes7437" title="Changes Since RFC 7437">
 	<t> <list style="symbols">
-		<t> Changed all mentions of the Internet Administrative Oversight 
-			committee (IAOC), and replaced it with the appropriate 
-			references to the IETF Administration LLC (IETF LLC). 
-			This included making changes on an as needed basis to 
-			some aspects of the process for the IETF LLC, in 
-		        accordance with IASA2. </t>
+		<t> Changed all mentions of the Internet Administrative
+		Oversight committee (IAOC), and replaced it with the
+		appropriate references to the IETF Administration LLC
+		(IETF LLC).  This included making changes on an as needed
+		basis to some aspects of the process for the IETF LLC, in
+		accordance with IASA2. </t>
 
-               <t>  Revised definition of IETF Executive Director, and
-	       added definition of "Managing Director, IETF
-	       Secretariat".  Changed text to "Managing Director, IETF
-	       Secretariat" where appropriate.</t>
+               <t>Revised definition of IETF Executive Director, and
+               added definition of "Managing Director, IETF Secretariat".
+               Changed text to "Managing Director, IETF Secretariat"
+               where appropriate.</t>
 
-		<t> Added references to appropriate IASA2 documents. </t>
+	       <t>Added references to appropriate IASA2 documents. </t>
 			
-		<t> Corrected a few grammatical errors. </t>
-		
 		<t>Modified the Advice and Consent model to enable IESG, IAB, and IETF LLC to 
-			communicate directly with the NomCom rather than via the 
-			Managing Director, IETF Secretariat.</t>
+		communicate directly with the NomCom rather than via the 
+		Managing Director, IETF Secretariat.</t>
 		
-		<t>Updated member removal text to reflect the new LLC rules, which 
+                <t>Updated removal text to reflect the new LLC rules, which 
 		enables removal via the LLC or the IETF recall process, except for 
-		the ISOC-appointed member.</t>
+		the ISOC-appointed director.</t>
 		
-		<t>Removed discussion text from the volunteer eligibility section. This means 
-			that IETF LLC employees and contractors cannot volunteer for the NomCom 
-			but does not extend that prohibition to ISOC employees and contractors.</t>
-		
+                <t>Updated the document to clarify that there are members
+		of the IAB and IESG, and director of the IETF LLC.</t>
+
+                <t>Updated document to also specify procedures for the
+ 	        NomCom appointed IETF Trust trustees.</t>
+
+                <t>Revised Abstract and Introduction to provide current
+		context.</t> 
+
+               <t>Changed "nominating committee" to "NomCom" throughout
+               the document because it is what most use to describe the
+               IETF Nominating Committee.</t>
+
+               <t>Editorial changes.</t>
+
+
 	    </list> </t>
+
 </section>
 
-	<section anchor="oral" title="Oral Tradition">
-		<t> Over the years, various nominating committees have learned
+<section anchor="oral" title="Oral Tradition">
+		<t> Over the years, various NomComs have learned
 		    through oral tradition passed on by liaisons that there are
 		    certain consistencies in the process and information
 		    considered during deliberations.  Some items from that oral
 		    tradition are collected here to facilitate its consideration
-		    by future nominating committees.
+		    by future NomComs.
 
 		    <list style="numbers">
 			<t> It has been found that experience as an IETF
 			    Working Group Chair or an IRTF Research Group Chair
 			    is helpful in giving a nominee experience of what
 			    the job of an Area Director involves.  It also
-			    helps a nominating committee judge the technical,
+			    helps a NomCom judge the technical,
 			    people, and process management skills of the
 			    nominee. </t>
 
@@ -1939,9 +2000,9 @@
 			    issue of continuity versus turnover should be
 			    evaluated each year according to the expectations of
 			    the IETF community, as it is understood by each
-			    nominating committee. </t>
+			    NomCom. </t>
 
-			<t> The number of nominating committee members with the
+			<t> The number of NomCom members with the
 			    same primary affiliation is limited in order to
 			    avoid the appearance of improper bias in choosing
 			    the leadership of the IETF.  Rather than defining
@@ -1963,7 +2024,7 @@
 
 		<t> The only absolute in the timeline rules for the annual
 		    process is that its completion is due by the First IETF of
-		    the year after the nominating committee begins its term.
+		    the year after the NomCom begins its term.
 		    This is supported by the fact that the confirmed candidate
 		    terms begin during the week of the First IETF. </t>
 
@@ -1978,7 +2039,7 @@
 			    this process. </t>
 
 			<t> Second is the selection of the candidates by the
-			    nominating committee.  Four months are allotted
+			    NomCom.  Four months are allotted
 			    for this process. </t>
 
 			<t> Third is the confirmation of the candidates by
@@ -2004,15 +2065,15 @@
 
 			<t> The Chair establishes and announces
 				milestones to ensure the timely selection of the
-				nominating committee members. [1] </t>
+				NomCom members. [1] </t>
 
 			<t> The Chair contacts the IESG, IAB,
 				and Internet Society Board of Trustees
 				and requests a liaison.  The Chair contacts
 				the prior year's Chair and requests an
 				advisor.  The Chair obtains the list of IESG,
-				IAB, and IETF LLC open positions and descriptions
-				from the IETF Executive Director. [0] </t>
+				IAB, IETF Trust, and IETF LLC open positions and descriptions
+				from the chairs of each group. [0] </t>
 
 			<t> The Chair announces the solicitation
 				for voting volunteer members that must remain
@@ -2066,7 +2127,7 @@
 				First IETF (approx. October 1). [1] </t>
 
 			<t> Over the next three months, the
-				nominating committee collects input and
+				NomCom collects input and
 				deliberates.  It should plan to conduct
 				interviews and other consultations during the
 				Third IETF.  The committee is due to complete
@@ -2087,7 +2148,7 @@
 
 			<t> The confirming bodies have one month
 				to deliberate and, in communication with the
-				nominating committee, accept or reject
+				NomCom, accept or reject
 				candidates. [4] </t>
 
 			<t> The Chair notifies and advises
@@ -2103,7 +2164,7 @@
 
 	<section anchor="thanks" title="Acknowledgments">
 		<t> A great deal of work went into the RFCs that preceded
-		    this one.  The 2014 nominating committee and this editor
+		    this one.  The 2014 NomCom and this editor
 		    would like to thank all of them once again for the time
 		    and energy it took to get us to where we are now.  In
 		    no particular order, we acknowledge:
@@ -2130,6 +2191,92 @@
 		    and Brian Carpenter caught the nits that fell through
 		    the cracks. </t>
 	</section>
+
+<section anchor="IDchanges" title="Change log [RFC Editor: Please remove]">
+  
+  <t><list>
+  
+  
+  <t>draft-ietf-iasa2-rfc74337bis-01, 2018-October-16:</t>
+
+  <?rfc subcompact="yes" ?>
+
+      <t><list style="symbols">
+		
+	<t>Modified the Advice and Consent model to enable IESG, IAB, and
+	IETF LLC to communicate directly with the NomCom rather than via
+	the Managing Director, IETF Secretariat.</t>
+		
+	<t>Updated member removal text to reflect the new LLC rules,
+	which enables removal via the LLC or the IETF recall process,
+	except for the ISOC-appointed director.</t>
+		
+	<t>Removed discussion text from the volunteer eligibility
+	section. This means that IETF LLC employees and contractors
+	cannot volunteer for the NomCom but does not extend that
+	prohibition to ISOC employees and contractors.</t>
+	
+        <t>Updated the document to clarify that there are members of the
+        IAB and IESG, trustees of the IETF Trust, and directors of the
+        IETF LLC.</t>
+
+        <t>Removed ISOC Board of Trustees members from the definition of
+	"sitting members" because it doesn't apply.</t>
+
+         <t>Updated document to also include procedures for the
+	 NomCom appointed IETF Trust trustees.</t>
+
+        <t>Revised Abstract and Introduction to provide current
+        context.</t>
+
+        <t>Changed "nominating committee" to "NomCom" throughout the
+	document because it is what most use to describe the IETF
+	Nominating Committee.</t>
+
+        <t>Added an no-actions IANA Considerations Section.</t>
+
+       <t>Editorial changes.</t>
+
+      </list></t>
+
+  <?rfc subcompact="no" ?>
+
+  <t>draft-ietf-iasa2-rfc74337bis-00, 2018-October-12:</t>
+
+  <?rfc subcompact="yes" ?>
+
+  <t>Initial bis draft, Changes include:<list style="symbols">
+
+
+
+		<t> Changed all mentions of the Internet Administrative
+		Oversight committee (IAOC), and replaced it with the
+		appropriate references to the IETF Administration LLC
+		(IETF LLC).  This included making changes on an as needed
+		basis to some aspects of the process for the IETF LLC, in
+		accordance with IASA2. </t>
+
+               <t>Revised definition of IETF Executive Director, and
+	       added definition of "Managing Director, IETF
+	       Secretariat".  Changed text to "Managing Director, IETF
+	       Secretariat" where appropriate.</t>
+
+		<t> Added references to appropriate IASA2 documents. </t>
+			
+		<t> Corrected a few grammatical errors. </t>
+      
+      </list></t>
+
+  <?rfc subcompact="no" ?>
+
+
+
+  </list></t>
+
+
+</section>
+	
 </back>
 
 </rfc>
+
