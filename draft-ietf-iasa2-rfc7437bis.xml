@@ -34,7 +34,7 @@
 	
 <title abbrev="NomCom">
 	IAB, IESG, and IETF LLC Selection, Confirmation, and Recall Process: 
-	Operation of the Nominating and Recall Committees
+	Operation of the IETF Nominating and Recall Committees
 </title>
 
 <author initials="M. S." surname="Kucherawy" fullname="Murray S. Kucherawy" role="editor">
@@ -87,8 +87,8 @@
 
 <abstract>
 	<t> The process by which the members of the IAB and IESG, some
-	trustees of the IETF Trust, and
-	some directors of the IETF LLC are selected, confirmed, and
+	Trustees of the IETF Trust, and
+	some Directors of the IETF LLC are selected, confirmed, and
 	recalled is specified in this document.  This document based on
 	RFC3777 and RFC7437 and has been updated to reflect the changes
 	introduced by IASA 2.0.</t>
@@ -105,17 +105,17 @@
 <section anchor="intro" title="Introduction">
 
 	<t> This document is a revision of <xref target="RFC7437"/> that
-	updates it to be consistent with the IASA 2.0 changes.  RFC7437
+	updates it to be consistent with the IASA 2.0 changes.  RFC 7437
 	was based on <xref target="RFC3777"/> that consolidated and updated
 	other RFCs that updated that document into a single
 	specification.  The result is a complete specification of the
 	process by which members of the Internet Architecture Board (IAB)
-	and Internet Engineering Steering Group (IESG), some trustees of
-	the IETF Trust, and some directors of the IETF Administration LLC
+	and Internet Engineering Steering Group (IESG), some Trustees of
+	the IETF Trust, and some Directors of the IETF Administration LLC
 	(IETF LLC), are selected, confirmed, and recalled. </t>
 
 	<t>Section 2 of <xref target="I-D.ietf-iasa2-trust-update"/>
-	provides further details about the IETF Trust trustees
+	provides further details about the IETF Trust Trustees
 	positions that are filled by the IETF Nominating Committee
 	(NomCom). </t>
 
@@ -154,7 +154,7 @@
 
 			<t hangText="Nominating Committee Selection:"> This
 				is the process by which the volunteers who
-				will serve on the committee are
+				will serve on the NomCom are
 				selected. </t>
 
 			<t hangText="Nominating Committee Operation:"> This
@@ -184,7 +184,7 @@
        to be
        aligned with IASA 2.0 Model <xref target="I-D.ietf-iasa2-struct"/>
       that creates a IETF Administration Limited Liability Company
-      ("LLC") managed by a board of directors ("LLC Board").  
+      ("IETF LLC") managed by a board of Directors ("LLC Board").  
  
      This document obsoletes <xref target="RFC7437"/>.</t>
 		
@@ -197,7 +197,7 @@
 		    reader.
 
 		    <list style="hanging">
-			<t hangText="Candidate:"> A nomine who has been
+			<t hangText="Candidate:"> A nominee who has been
 				selected to be considered for confirmation by
 				a confirming body. </t>
 
@@ -231,7 +231,7 @@
 
 			<t hangText="Nominee:"> A person who is being or
 			has been considered for one or more open
-			positions of the IESG, IAB, IETF Trust trustee or
+			positions of the IESG, IAB, IETF Trust Trustee or
 			IETF LLC. </t>
 
 			<t hangText="Sitting Member:"> A person who is
@@ -245,7 +245,7 @@
 			currently serving as a Director of the
 			IETF LLC. </t>
 
-                        <t hangText="Sitting IETF Trust trustee:"> A person who is
+                        <t hangText="Sitting IETF Trust Trustee:"> A person who is
 			currently serving as a Trustee of the IETF
 			Trust.</t>
 			
@@ -338,16 +338,16 @@
 			<t> The intent of this rule is to ensure the
 			review of approximately one-half of each of the
 			IESG and IAB sitting members, one of the three
-			NomCom nominated IETF LLC director
+			NomCom nominated IETF LLC Director
 			positions, and one of the three nominated IETF Trust
-			trustee positions, each year.  It is recognized
+			Trustee positions, each year.  It is recognized
 			that circumstances may exist that will require
 			the NomCom to review more or less
 			than the usual number of positions, e.g., if the
 			IESG, IAB, IETF Trust, or IETF LLC have reorganized prior to
 			this process and created new positions, if there
 			are an odd number of current positions, or if a
-			member or director unexpectedly resigns. </t>
+			member or Director unexpectedly resigns. </t>
 		</section>
 
 		<section anchor="gen_terms" title="Term Lengths">
@@ -357,7 +357,7 @@
 			    years that best facilitates the review of
 			    one-half of the members each year.</t>
 			
-			<t> Confirmed IETF LLC director candidates are expected to
+			<t> Confirmed IETF LLC Director candidates are expected to
 			serve at least a three-year term, except if a
 			nominating or selection body decides to use a
 			shorter term to allow for initial staggered
@@ -367,7 +367,7 @@
 			guidance on terms length and term limits for the
 			IETF LLC. </t>
 
-			<t> Confirmed IETF Trust trustee candidates are expected to
+			<t> Confirmed IETF Trust Trustee candidates are expected to
 			serve at least a three-year term, except if a
 			nominating or selection body decides to use a
 			shorter term to allow for initial staggered
@@ -394,7 +394,7 @@
 			responsibilities with other positions (both those
 			being reviewed and those sitting) to which it may
 			assign a term of not more than three years to
-			ensure that all such members or directors will
+			ensure that all such members or Directors will
 			not be reviewed at the same time. </t>
 
 			<t> All sitting member terms end during the First IETF
@@ -420,12 +420,12 @@
 			    terms overlap with the terms of the sitting
 			    members for the entire week of the meeting. </t>
 					
-			<t> For confirmed trustee candidates of the IETF
+			<t> For confirmed Trustee candidates of the IETF
 		        Trust, the term begins at the next IETF Trust
 			or as dictated by the policies
 			and procedures of the IETF Trust. </t>
 
-			<t> For confirmed director candidates of the IETF
+			<t> For confirmed Director candidates of the IETF
 			LLC, the term begins at the next appropriate IETF
 			LLC Board meeting or as dictated by the policies
 			and procedures of the IETF LLC. </t>
@@ -595,7 +595,7 @@
 				reviews the IAB candidates. </t>
 
 				<t>The sitting IESG members review the
-				IETF Trust trustee Candidates.</t>
+				IETF Trust Trustee Candidates.</t>
 
 				<t> The IETF LLC candidate is reviewed as
 				    specified in <xref target="I-D.ietf-iasa2-struct"/>. </t>
@@ -672,7 +672,7 @@
 		<section anchor="gen_sitting" title="Sitting Members and Directors">
 			<t> The following rules apply to nominees and
 			candidates who are currently sitting members of
-			the IESG or IAB, or IETF LLC directors and who
+			the IESG or IAB, or IETF LLC Directors and who
 			are not sitting in an open position being filled
 			by the NomCom. </t>
 	
@@ -680,7 +680,7 @@
 			    position does not automatically create a vacancy
 			    in the IESG, IAB, or IETF LLC position currently
 			    occupied by the candidate.  The mid-term vacancy
-			    can not exist until, first, the candidate formally
+			    cannot exist until, first, the candidate formally
 			    resigns from the current position and, second, the
 			    body with the vacancy formally decides for itself
 			    that it wants the NomCom to fill the
@@ -950,7 +950,7 @@
 			    are expected to review the operation and executing
 			    process of the NomCom and to report
 			    any concerns or issues to the Chair of the
-			    NomCom immediately.  If they can not
+			    NomCom immediately.  If they cannot
 			    resolve the issue between themselves, liaisons must
 			    report it according to the dispute resolution
 			    process stated elsewhere in this document. </t>
@@ -1000,7 +1000,7 @@
 			<t> The prior year's Chair is expected to review
 			the actions and activities of the current Chair
 			and to report any concerns or issues to the
-			NomCom Chair immediately.  If they can not
+			NomCom Chair immediately.  If they cannot
 			resolve the issue between themselves, the prior
 			year's Chair must report it according to the
 			dispute resolution process stated elsewhere in
@@ -1392,7 +1392,7 @@
 			    uncooperative. </t>
 
 			<t> Regardless of the circumstances, if individual
-			    committee members can not work out their differences
+			    committee members cannot work out their differences
 			    between themselves, the entire committee may be
 			    called upon to discuss and review the
 			    circumstances.  If a resolution is not forthcoming, a
@@ -1447,7 +1447,7 @@
 			    concern regarding the Chair should report it to
 			    the prior year's Chair immediately.  The prior
 			    year's Chair is expected to report it to the Chair
-			    immediately.  If they can not resolve the issue
+			    immediately.  If they cannot resolve the issue
 			    between themselves, the prior year's Chair must
 			    report it according to the dispute resolution
 			    process stated elsewhere in this document. </t>
@@ -1536,7 +1536,7 @@
 
 			<t> A broad base of the community should include the
 			    existing members of the IESG and IAB, and
-			    IETF LLC directors,
+			    IETF LLC Directors,
 			    especially sitting members who share
 			    responsibilities with open positions, e.g.,
 			    co-Area Directors, and working group chairs,
@@ -1655,7 +1655,7 @@
 		    confidentiality.  For this reason, when process issues arise,
 		    it is best to make every reasonable effort to resolve them
 		    within the committee.  However, when circumstances do not
-		    permit this or no resolution is forthcoming, the process
+		    permit this, or no resolution is forthcoming, the process
 		    described here is to be used. </t>
 
 		<t> The following rules apply to the process.
@@ -1737,12 +1737,12 @@
 
 			<t> As described in Section 4.12 of 
 				<xref target="I-D.ietf-iasa2-struct"/>,
-				directors of the IETF LLC Board  
+				Directors of the IETF LLC Board  
 				may be removed 
 				with or without cause by the IETF LLC Board itself.  
 				In addition, this IETF recall process can also 
-				be used to remove or recall an IETF LLC director,
-		  	        except for the director
+				be used to remove or recall an IETF LLC Director,
+		  	        except for the Director
 				appointed by the Internet Society. </t>
 
                 </section>			
@@ -1757,7 +1757,7 @@
 			petition (email is acceptable) to the Internet
 			Society President the recall of any sitting IESG
 			or IAB member, or NomCom appointed
-			IETF Trust trustee. </t>
+			IETF Trust Trustee. </t>
 
 			<t> All individual and collective qualifications of
 			    NomCom eligibility are applicable,
@@ -1945,13 +1945,13 @@
 		
                 <t>Updated removal text to reflect the new LLC rules, which 
 		enables removal via the LLC or the IETF recall process, except for 
-		the ISOC-appointed director.</t>
+		the ISOC-appointed Director.</t>
 		
                 <t>Updated the document to clarify that there are members
-		of the IAB and IESG, and director of the IETF LLC.</t>
+		of the IAB and IESG, and Director of the IETF LLC.</t>
 
                 <t>Updated document to also specify procedures for the
- 	        NomCom appointed IETF Trust trustees.</t>
+ 	        NomCom appointed IETF Trust Trustees.</t>
 
                 <t>Revised Abstract and Introduction to provide current
 		context.</t> 
@@ -2209,7 +2209,7 @@
 		
 	<t>Updated member removal text to reflect the new LLC rules,
 	which enables removal via the LLC or the IETF recall process,
-	except for the ISOC-appointed director.</t>
+	except for the ISOC-appointed Director.</t>
 		
 	<t>Removed discussion text from the volunteer eligibility
 	section. This means that IETF LLC employees and contractors
@@ -2217,14 +2217,14 @@
 	prohibition to ISOC employees and contractors.</t>
 	
         <t>Updated the document to clarify that there are members of the
-        IAB and IESG, trustees of the IETF Trust, and directors of the
+        IAB and IESG, Trustees of the IETF Trust, and Directors of the
         IETF LLC.</t>
 
         <t>Removed ISOC Board of Trustees members from the definition of
 	"sitting members" because it doesn't apply.</t>
 
          <t>Updated document to also include procedures for the
-	 NomCom appointed IETF Trust trustees.</t>
+	 NomCom appointed IETF Trust Trustees.</t>
 
         <t>Revised Abstract and Introduction to provide current
         context.</t>
