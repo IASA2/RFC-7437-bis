@@ -184,7 +184,7 @@
        to be
        aligned with IASA 2.0 Model <xref target="I-D.ietf-iasa2-struct"/>
       that creates a IETF Administration Limited Liability Company
-      ("IETF LLC") managed by a board of Directors ("LLC Board").  
+      ("IETF LLC") managed by a Board of Directors ("LLC Board").  
  
      This document obsoletes <xref target="RFC7437"/>.</t>
 		
@@ -2196,7 +2196,18 @@
   
   <t><list>
   
-  
+ <t>draft-ietf-iasa2-rfc74337bis-02, 2018-October-16:</t>
+
+  <?rfc subcompact="yes" ?>
+
+      <t><list style="symbols">
+		
+      	<t>Added "IETF" before Nominating and Recall Committees in the title</t>
+	<t>Added leading capitalization to Trustee(s) and Director(s) for consistency</t>
+	<t>Fixed other minor grammatical, spelling, or abbreviation nits</t>
+
+      </list></t> 
+
   <t>draft-ietf-iasa2-rfc74337bis-01, 2018-October-16:</t>
 
   <?rfc subcompact="yes" ?>
