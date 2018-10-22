@@ -10,6 +10,8 @@
 <!ENTITY RFC5633 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5633.xml">
 <!ENTITY RFC6859 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6859.xml">
 <!ENTITY RFC7437 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.7437.xml">
+<!ENTITY RFC7776 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.7776.xml">
+<!ENTITY RFC8318 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.8318.xml">
 <!ENTITY I-D.ietf-iasa2-struct SYSTEM "http://xml.resource.org/public/rfc/bibxml3/reference.I-D.ietf-iasa2-struct.xml">
 <!ENTITY I-D.ietf-iasa2-trust-update SYSTEM "http://xml.resource.org/public/rfc/bibxml3/reference.I-D.ietf-iasa2-trust-update.xml">
 ]>
@@ -26,8 +28,8 @@
   
 <rfc
     category="bcp"
-    docName="draft-ietf-iasa2-rfc7437bis-02"
-    obsoletes="7437"
+    docName="draft-ietf-iasa2-rfc7437bis-03"
+    obsoletes="7437, 8318"
     ipr="trust200902">
 
 <front>
@@ -93,7 +95,7 @@
 	RFC3777 and RFC7437 and has been updated to reflect the changes
 	introduced by IASA 2.0.</t>
 
-	<t>This document obsoletes RFC7437.</t>
+	<t>This document obsoletes RFC7437 and RFC8318.</t>
 	
 </abstract>
 
@@ -186,7 +188,7 @@
       that creates a IETF Administration Limited Liability Company
       ("IETF LLC") managed by a Board of Directors ("LLC Board").  
  
-     This document obsoletes <xref target="RFC7437"/>.</t>
+     This document obsoletes <xref target="RFC7437"/> and <xref target="RFC8318"/>.</t>
 		
 	</section>
 
@@ -421,9 +423,9 @@
 			    members for the entire week of the meeting. </t>
 					
 			<t> For confirmed Trustee candidates of the IETF
-		        Trust, the term begins at the next IETF Trust
-			or as dictated by the policies
-			and procedures of the IETF Trust. </t>
+			Trust, the term begins at the next IETF Trust
+			meeting or as dictated by the policies and
+			procedures of the IETF Trust. </t>
 
 			<t> For confirmed Director candidates of the IETF
 			LLC, the term begins at the next appropriate IETF
@@ -821,12 +823,31 @@
 			    Chair, 10 voting volunteers, two liaisons,
 			    and an advisor. </t>
 
-			<t> Any committee member may propose the addition of
-			    an advisor to participate in some or all of the
-			    deliberations of the committee.  The addition
-			    must be approved by the committee according to
-			    its established voting mechanism.  Advisors
-			    participate as individuals. </t>
+<!--
+			<t> Any committee member may propose the addition
+			of an advisor to participate in some or all of
+			the deliberations of the committee.  The addition
+			must be approved by the committee according to
+			its established voting mechanism.  Advisors
+			participate as individuals. </t>
+-->
+			<t> Any committee member may propose the addition
+			of an advisor to participate in some or all of
+			the deliberations of the committee.  The addition
+			must be approved by the committee according to
+			its established voting mechanism.  Advisors
+			participate as individuals.</t>
+
+                        <t>Committee members are encouraged to propose
+                        the addition of advisor(s) who are
+                        knowledgeable about the operations of the IETF
+                        Trust and/or IETF LLC, whether or not that NomCom
+                        is reviewing an IETF Trust Trustee or IETF LLC
+                        Director position.  The NomCom may choose to ask
+                        the IETF Trust and/or IETF LLC to suggest
+                        advisors who are knowledgeable about their
+                        operations but may select any advisor they vote
+                        to approve.</t>
 
 			<t> Any committee member may propose the addition of a
 			    liaison from other unrepresented organizations to
@@ -851,6 +872,14 @@
 			    a liaison to the NomCom at its own
 			    discretion. </t>
 
+			<t> The IETF Trust may appoint
+			    a liaison to the NomCom at its own
+			    discretion. </t>
+
+			<t> The IETF LLC may appoint
+			    a liaison to the NomCom at its own
+			    discretion. </t>
+			    
 			<t> The Chair of last year's NomCom
 			    serves as an advisor according to rules stated
 			    elsewhere in this document. </t>
@@ -935,10 +964,11 @@
 			    provide information as requested or when they
 			    believe it would be helpful to the committee. </t>
 
-			<t> Liaisons from the IESG and IAB are expected
-			    to provide information to the NomCom
-			    regarding the operation, responsibility, and
-			    composition of their respective bodies. </t>
+			<t> Liaisons from the IESG, IAB, IETF Trust, and
+			IETF LLC are expected to provide information to
+			the NomCom regarding the operation,
+			responsibility, and composition of their
+			respective bodies. </t>
 
 			<t> Liaisons are expected to convey questions from the
 			    committee to their respective organizations and
@@ -971,17 +1001,27 @@
 
 		<section anchor="sel_liaisons_2" title="Liaison Appointment">
 
+<!--
 				<t>DISCUSSION
 				<list>
                                 <t>Should the IETF Trust and IETF LLC appoint a liaisons
 				to the NomCom?
 				</t>
 				</list></t>
+-->
 
 			<t> The sitting IAB and IESG members each
 			    appoint a liaison from their current membership,
 			    someone who is not sitting in an open position, to
 			    serve on the NomCom. </t>
+
+			<t> The sitting IETF Trust Trustees and IETF LLC
+			Directors each may appoint a liaison from their
+			current membership, someone who is not sitting in
+			an open position, to serve on the NomCom. </t>
+
+
+			    
 		</section>
 
 		<section anchor="sel_advisors" title="Advisors">
@@ -1733,6 +1773,11 @@
 		    necessary, a paragraph discussing the interpretation of
 		    each rule is included. </t>	
 		
+                <t>It applies to IESG and IAB Members, the NomCom
+		appointed IETF Trust Trustees, and the NomCom appointed
+		IETF LLC Directors.</t>
+
+<!--
 		<section anchor="LLC-removal" title="IETF LLC Director Removal">
 
 			<t> As described in Section 4.12 of 
@@ -1749,16 +1794,70 @@
 		
            <section title="IESG and IAB Member and IETF Trust Trustee Recall">
 
-		<section anchor="recall_petition" title="Petition">
 
-			<t> At any time, at least 20 members of the IETF
-			community, who are qualified to be voting members
-			of a NomCom, may request by signed
-			petition (email is acceptable) to the Internet
-			Society President the recall of any sitting IESG
-			or IAB member, or NomCom appointed
-			IETF Trust Trustee. </t>
+         <t>There are two paths to recalls, the first is the approach
+         defined in this document, and the second is the Ombudsteam process
+         as defined in <xref target="RFC7776"/>.  The Ombudsteam process
+         allows the Ombudsteam to form a recall petition on its own
+         without requiring 20 signatories from the community.  Such a
+         petition shall be treated in all ways like any other recall
+         petition as described in the following sections.  As defined in
+         <xref target="RFC7776"/> the petition and its signatories
+         (the Ombudsteam) shall be announced to the IETF community, and a
+         Recall Committee Chair shall be appointed to complete the Recall
+         Committee process.  It is expected that the Recall Committee
+         will receive a briefing from the Ombudsteam explaining why
+         recall is considered an appropriate remedy.</t>
+-->
 
+	<section anchor="recall_petition" title="Petition">
+
+        <t>At any time, a signed petition (email is acceptable) may be
+        submitted to the Internet Society President to request the recall
+        of any sitting IESG or IAB member, or NomCom appointed IETF Trust
+        Trustee, or NomCom appointed IETF LLC Director. There are two
+        different types of petitions: a petition by members of the IETF
+        community, and a petition by the Ombudsteam as described in <xref
+        target="RFC7776"/>.</t>
+
+        <section anchor="c_petition" title="Community Petition">
+
+         <t>A recall petition can be made by at least 20 members of the
+         IETF community who are qualified to be voting members of a
+         NomCom. All individual and collective qualifications of NomCom
+         eligibility are applicable, including that no more than two
+         signatories may have the same primary affiliation.</t>
+
+         <t>Each signature must include a full name, email address, and
+         primary company or organization affiliation.</t>
+
+         <t>The IETF Secretariat is responsible for confirming that each
+         signatory is qualified to be a voting member of a NomCom.  A
+         valid petition must be signed by at least 20 qualified
+         signatories.</t>
+
+         <t>The petition must include a statement of justification for
+         the recall and all relevant and appropriate supporting
+         documentation.</t>
+
+         <t>The petition and its signatories must be announced to the
+         IETF community.</t>
+
+        </section>
+
+        <section anchor="o_petition" title="Ombudsteam Petition">
+
+        <t>The Ombudsteam process allows the Ombudsteam to form a recall
+        petition on its own without requiring 20 signatories from the
+        community.  As defined in <xref target="RFC7776"/>, the petition
+        and its signatories (the Ombudsteam) shall be announced to the
+        IETF community, and a Recall Committee Chair shall be appointed
+        to complete the Recall Committee process.  It is expected that
+        the Recall Committee will receive a briefing from the Ombudsteam
+        explaining why recall is considered an appropriate remedy.</t>
+
+        </section>			
+<!--
 			<t> All individual and collective qualifications of
 			    NomCom eligibility are applicable,
 			    including that no more than two signatories may
@@ -1780,7 +1879,10 @@
 
 			<t> The petition and its signatories must be announced
 			    to the IETF community. </t>
+-->
+
 		</section>
+
 
 		<section anchor="recall_chair" title="Recall Committee Chair">
 			<t> The Internet Society President shall appoint a Recall
@@ -1829,7 +1931,9 @@
 			    to be filled according to the mid-term vacancy
 			    rules. </t>
 		</section>
+<!--
   	   </section>
+-->
 	</section>
 
     <section anchor="IANA" title="IANA Considerations">
@@ -1868,6 +1972,7 @@
 	&RFC4071;
 -->
 	&RFC7437;
+	&RFC7776;
 	&I-D.ietf-iasa2-struct;
         &I-D.ietf-iasa2-trust-update;
 </references>
@@ -1893,6 +1998,7 @@
   </reference>
   
 	&RFC3797;
+        &RFC8318;
 <!--
 	&RFC5078;
 	&RFC5633;
@@ -1939,9 +2045,10 @@
 
 	       <t>Added references to appropriate IASA2 documents. </t>
 			
-		<t>Modified the Advice and Consent model to enable IESG, IAB, and IETF LLC to 
-		communicate directly with the NomCom rather than via the 
-		Managing Director, IETF Secretariat.</t>
+		<t>Modified the Advice and Consent model to enable IESG,
+		IAB, and IETF LLC to communicate directly with the NomCom
+		rather than via the Managing Director, IETF
+		Secretariat.</t>
 		
                 <t>Updated removal text to reflect the new LLC rules, which 
 		enables removal via the LLC or the IETF recall process, except for 
@@ -1959,6 +2066,15 @@
                <t>Changed "nominating committee" to "NomCom" throughout
                the document because it is what most use to describe the
                IETF Nominating Committee.</t>
+
+               <t>Added that the IETF Trust Trustees and IETF LLC
+               Directors, each may appoint a liaison to the NomCom.</t>
+
+               <t>Incorporated the update to RFC7437 done by RFC7776.</t>
+
+               <t>Incorporated the update to RFC7437 done by <xref
+               target="RFC8318"/> and updated it to refer to the IETF
+               Trust and IETF LLC. instead of the IAOC.</t>
 
                <t>Editorial changes.</t>
 
@@ -2196,17 +2312,47 @@
   
   <t><list>
   
- <t>draft-ietf-iasa2-rfc74337bis-02, 2018-October-16:</t>
+ <t>draft-ietf-iasa2-rfc74337bis-03, 2018-October-22:</t>
 
   <?rfc subcompact="yes" ?>
 
       <t><list style="symbols">
 		
-      	<t>Added "IETF" before Nominating and Recall Committees in the title</t>
-	<t>Added leading capitalization to Trustee(s) and Director(s) for consistency</t>
-	<t>Fixed other minor grammatical, spelling, or abbreviation nits</t>
+        <t>Revised <xref target="recall"/> to focus on repeal of the the
+	NomCom appoint LLC Director positions.</t>
+
+	<t>Added that the IETF Trust Trustees and IETF LLC Directors,
+	each may appoint a liaison to the NomCom.</t>
+
+        <t>Incorporated the update to RFC7437 done by RFC7776.</t>
+
+       <t>Incorporated the update to RFC7437 done by <xref
+       target="RFC8318"/> and updated it to refer to the IETF
+       Trust and IETF LLC. instead of the IAOC.</t>
+
+
+	<t>Editorial changes.</t>
 
       </list></t> 
+
+      <?rfc subcompact="no" ?>
+
+ <t>draft-ietf-iasa2-rfc74337bis-02, 2018-October-19:</t>
+
+  <?rfc subcompact="yes" ?>
+
+      <t><list style="symbols">
+		
+      	<t>Added "IETF" before Nominating and Recall Committees in the title.</t>
+
+	<t>Added leading capitalization to Trustee(s) and Director(s) for consistency.</t>
+
+	<t>Fixed other minor grammatical, spelling, or abbreviation nits.</t>
+
+      </list></t> 
+      
+      <?rfc subcompact="no" ?>
+
 
   <t>draft-ietf-iasa2-rfc74337bis-01, 2018-October-16:</t>
 
@@ -2250,7 +2396,7 @@
 
       </list></t>
 
-  <?rfc subcompact="no" ?>
+      <?rfc subcompact="no" ?>
 
   <t>draft-ietf-iasa2-rfc74337bis-00, 2018-October-12:</t>
 
